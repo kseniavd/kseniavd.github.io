@@ -1,0 +1,437 @@
+* {
+	margin: 0;	/*сброс внешнего отступа*/
+	padding: 0; /*сброс внутреннего отступа*/
+	outline:none; /*сброс рамки*/
+}
+
+img {
+	border:0; /*рамка у картинок внутри ссылок*/
+}
+
+ul{
+	list-style:none; /*чтоб не было точек у списков*/
+}
+
+body {
+	font: 12px Arial, sans-serif; /*шрифт по умолчанию документа*/
+	color: #515151; /*цвет текста документа*/
+	background: url(./images/bg_phon.png); /*фон документа*/
+	line-height: 1.6;
+	position: relative;
+	min-width: 1014px; /*мин ширина от мелких ошибок*/
+}
+
+body{
+	width: 100%;
+	background: #151515;
+}
+
+
+.wrapper{ /*центрирование страницы по центру с указанной шириной*/
+	width: 1014px;
+	margin:0 auto;
+}
+
+
+
+.header:after{content: ""; display: block;clear: both;} 
+
+.header{
+	position: relative;
+	border: solid 1px #222;
+	background-image: -webkit-linear-gradient(bottom, #000, #131314);
+	background-image: -moz-linear-gradient(bottom, #000, #131314);
+	background-image: -o-linear-gradient(bottom, #000, #131314);
+	background-image: -ms-linear-gradient(bottom, #000, #131314);
+	background-image: linear-gradient(to top, #000, #131314);
+	z-index: 1;
+}
+
+.logo{
+	background: url(../images/logo.png) no-repeat;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 187px;
+	height: 106px;
+	z-index: 2;
+}
+
+.nav ul li{
+	float: left;
+}
+
+.nav ul li a{
+	text-transform: uppercase;
+	font: bold 13px Arial, sans-serif;
+	background: -webkit-gradient(linear, left bottom,left top,color-stop(0.2, #434343),color-stop(1, #848484));, white;
+	-webkit-background-clip: text;
+	/*background: gradient(linear, left bottom,left top,color-stop(0.2, #848484),color-stop(1, #484848));
+	color rgba(255, 255, 255, 0.2);
+	background-clip: text;*/
+	background: -ms-gradient(linear, left bottom,left top,color-stop(0.2, #434343),color-stop(1, #848484));
+	color: rgba(255, 255, 255, 0.2);
+	-ms-background-clip: text;
+	/*color: transparent;*/
+	display: block;
+	padding: 25px 38px 23px 38px;
+}
+
+.nav ul li .active {
+	background: -webkit-gradient(linear, left bottom,left top,color-stop(0.2, #8c8c8c),color-stop(1, #e1e1e1));, white;
+	-webkit-background-clip: text;
+	/*background: gradient(linear, left bottom,left top,color-stop(0.2, #e1e1e1),color-stop(1, #929292));
+	color rgba(255, 255, 255, 0.2);
+	background-clip: text;*/
+	background: -ms-gradient(linear, left bottom,left top,color-stop(0.2, #434343),color-stop(1, #848484));
+	color: rgba(255, 255, 255, 0.2);
+	-ms-background-clip: text;
+	/*color: transparent;*/
+	padding-left: 90px;
+}
+
+
+.nav ul li a:hover{
+	background: -webkit-gradient(linear, left bottom,left top,color-stop(0.2, #8c8c8c),color-stop(1, #e1e1e1));, white;
+	-webkit-background-clip: text;
+	/*background: gradient(linear, left bottom,left top,color-stop(0.2, #e1e1e1),color-stop(1, ##929292));
+	color rgba(255, 255, 255, 0.2);
+	background-clip: text;*/
+	
+	color: transparent;
+}
+
+.nav .broke{
+	padding-left: 170px;
+}
+
+#representation:after{content: ""; display: block;clear: both;} 
+
+#representation{
+	background: url(../images/band-bg-top.png) center;
+	height: 281px;
+	position: relative;
+}
+
+.representation{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 70px;
+	background: url(../images/repres.png);
+	width: 695px;
+	height: 90px;
+}
+
+.button-hire{
+	background: url(../images/button-hire.png);
+	width: 204px;
+	height: 48px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 190px;
+	left: 0;
+	right: 0;
+	text-indent: 100%;
+   	white-space: nowrap;
+   	overflow: hidden;
+}
+
+.slider:after{content: ""; display: block;clear: both;} 
+
+.slider{
+	position: relative;
+}
+
+.slider-bg{
+	width: 962px;
+	height: 385px;
+	background: #161616;
+	box-shadow: inset 0px 0px 32px rgba(0, 0, 0, 1);
+	border-radius: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.slider .slider-photo{
+	width: 895px;
+	height: 331px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 29px;
+}
+
+.row-back{
+	background: url(../images/bg-row-back.png);
+	width: 26px;
+	height: 53px; 
+	line-height: 53px;
+	position: absolute;
+	margin-top: auto;
+	margin-bottom: auto;
+	top: 45%;
+}
+
+
+.row-forward{
+	background: url(../images/bg-row-forward.png);
+	width: 26px;
+	height: 53px;  
+	line-height: 53px;
+	position: absolute;
+	margin-top: auto;
+	margin-bottom: auto;
+	top: 45%;
+	right: 23.5%;
+}
+
+.block-inform:after{content: ""; display: block;clear: both;}
+
+.block-inform{
+	padding: 30px 0 0 28px;
+	margin-bottom: 54px;
+}
+
+.block-inform .notice{
+	float: left;
+	border-right: 1px solid #2b2b2b;
+	width: 30%;
+	padding-left: 45px;
+	padding-bottom: 32px;
+}
+
+.notice h3{
+	text-transform: uppercase;
+	color: #fff;
+	font: 13px 'Arial', sans-serif;
+	padding-bottom: 7px;
+	padding-top: 5px;
+}
+
+.notice:first-child{
+	padding-left: 0;
+}
+
+.contacts{
+	float: left;
+	padding-left: 45px;
+	width: 30%;
+}
+
+.block-contact{
+	margin-bottom: 20px;
+
+}
+
+.block-contact h3{
+	color: #cf2d06;
+	text-transform: uppercase;
+	font-size: 13px; 
+	padding-bottom: 12px;
+}
+
+.block-contact .email{
+	background: url(../images/contact-mail.png) no-repeat;
+	width: 22px;
+	height: 20px;
+	padding-left: 26px;
+	padding-bottom: 10px;
+	
+}
+
+.block-contact .email p a{
+	text-decoration: none;
+	color: #515151;
+}
+
+.block-contact .email p a:hover{
+	text-decoration: underline;
+	color: #909295;
+}
+
+.block-contact .phone{
+	background: url(../images/contact-phone.png) no-repeat;
+	width: 18px;
+	height: 25px;
+	padding-left: 24px;
+}
+
+.block-contact .download{
+	background: url(../images/contact-download.png) no-repeat;
+	width: 15px;
+	height: 19px;
+	padding-left: 26px;
+}
+
+.email, .phone{
+	margin-bottom: 7px;
+}
+
+.block-contact .twitter{
+	float: left;
+	background: url(../images/twitter.png) no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+.block-contact .facebook{
+	float: left;
+	background: url(../images/fb.png) no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+.block-contact .linkedin{
+	float: left;
+	background: url(../images/linkedin.png) no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+.block-contact .flickr{
+	float: left;
+	background: url(../images/flickr.png) no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+.block-contact .deviantart{
+	float: left;
+	background: url(../images/deviantart.png) no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+.deviantart{
+	padding-right: 0;
+}
+
+.twitter, .facebook, .linkedin, .flickr{
+	padding-right: 7px;
+}
+
+.footer:after{content: ""; display: block;clear: both;}
+
+.footer{
+	background: url(../images/band-bg-bottom.png) repeat-x;
+	height: 258px;
+	border-top: 1px solid #202020;
+	position: relative;
+	padding-top: 5px;
+	
+}
+
+.block-footer:after{content: ""; display: block;clear: both;}
+
+.footer-bottom{
+	position: relative;
+}
+
+.friends{
+	float: left;
+	width: 306px;
+}
+
+.friends .cap{
+	background: url(../images/cap.png) no-repeat;
+	width: 136px;
+	height: 109px;
+	float: left;
+	padding-right: 24px;
+	margin-top: 12px;
+	margin-left: 20px; 
+}
+
+.block-cap ul li{
+	margin-bottom: 8px;
+}
+
+.block-cap ul li a{
+	text-decoration: none;
+	color: #4f4f4f;
+}
+
+.block-cap ul li a:hover{
+	text-decoration: underline;
+	color: #909295;
+}
+
+.friends h3, .post h3{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	line-height: 1.6;
+}
+
+.thank-you .block-thank{
+	background: url(../images/thank.png) no-repeat;
+	width: 163px;
+	height: 46px;
+	position: absolute;
+	top: 15px;
+	left: 442px;
+}
+
+.thank-you .button-works{
+	background: url(../images/button-works.png) no-repeat;
+	width: 202px;
+	height: 50px;
+	position: absolute;
+	top: 70px;
+	left: 425px;
+	text-indent: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.post h3{
+	padding-bottom: 0;
+}
+
+.friends p{
+	line-height: 1.8;
+}
+
+.post p{
+	margin-bottom: 13px;
+	line-height: 1.5;
+}
+
+.post{
+	float: right;
+	width: 234px;
+}
+
+
+
+.copyright:after{content: ""; display: block;clear: both;}
+
+.copyright{
+	display: block;
+	text-align: center;
+}
+
+.copyright p{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.button-droptop{
+	content: "";
+	background: url(../images/band-recent.png);
+	width: 29px;
+	height: 29px;
+	position: fixed;
+	right: 27%;
+	bottom: 12%;
+}
