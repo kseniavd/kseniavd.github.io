@@ -18,6 +18,7 @@ body{
 	color: #202021; /*цвет текста документа*/
 	background: url(../images/mup-bg.png) no-repeat top center;
 	min-width: 980px; /*мин ширина от мелких ошибок*/
+	padding-top: 45px;
 }
 
 li{list-style: none;}
@@ -55,7 +56,7 @@ h2{font: bold 20px "BebasRegular", sans-serif; text-transform: uppercase;}
 .nav-top{
 	overflow: hidden;
 	display: inline-block;
-	margin: 57px 0 0 118px;
+	margin: 57px 0 0 110px;
 	float: left;
 }
 
@@ -140,6 +141,10 @@ h2{font: bold 20px "BebasRegular", sans-serif; text-transform: uppercase;}
 	padding-bottom: 0;
 }
 
+.nav ul{
+	width: 936px;
+}
+
 .nav ul li{
 	float: left;
 }
@@ -156,51 +161,46 @@ h2{font: bold 20px "BebasRegular", sans-serif; text-transform: uppercase;}
 	color: #cf0000;
 }
 
+/*--------------------------------------------------------------*/
+
 #slider:after {content: ""; display: block;clear: both;}
 
-#slider{
-	margin-top: 58px;
+.owl-stage-outer{
+  width: 529px;
+  height: 289px;
+  overflow: hidden;
+  float: left;
+  border: 3px solid #000;
+  margin: 12px 10px;
 }
 
-#slider>.slider{
-	background: #202021;
-	float: left;
-	padding: 12px;
-	position: relative;
+.owl-item{
+  float: left;
+  position: relative;
 }
 
-.photo-slider:after {content: ""; display: block;clear: both;}
-
-.photo-slider{
-	float: left;
-	margin-right: 10px;
+.slider{
+  width: 670px;
+  height: 315px;
+  position: relative;
+  float: left;
+  background: #202021;
+  margin-top: 5px;
 }
 
-.photo-slider img{
-	border: 3px solid #000;
+.thumbnail ul{
+	margin-top: 12px;
 }
 
-.photo-slider .description-photo{
-	position: absolute;
-	bottom: 18px;
-	color: #fff;
-	background: rgba(15, 15, 15, 0.8);
+.thumbnail ul li{
+	margin-bottom: 6px;
 }
 
-.photo-slider .description-photo p{
-	padding: 8px 35px 4px 154px;
-	width: 337px;
+.thumbnail ul li a{
+  display: block;
 }
 
-.galery-photo{
-	float: right;
-}
-
-.galery-photo ul li{
-	margin-bottom: 2px;
-}
-
-.galery-photo img:hover{
+.thumbnail img:hover, .thumbnail .active img{
 	border: 2px solid #cf0000;
 	width: 103px;
 	height: 63px;
@@ -217,14 +217,27 @@ h2{font: bold 20px "BebasRegular", sans-serif; text-transform: uppercase;}
 	font-size: 10px;
 }
 
-.list-slider{
+.owl-carousel div p{
+    position:absolute;
+   	display:block;
+   	bottom: 0;
+	color: #fff;
+	padding: 10px 35px 6px 154px;
+	background: rgba(15, 15, 15, 0.8);
+	width: 340px;
+	font-size: 14px;
+}
+
+
+.article-slider{
+	margin-top: 6px;
 	float: right;
 	width: 250px;
 	background: #e4e4e4;
 	cursor: pointer;
 }
 
-.list-slider .icon-video img{
+.article-slider .icon-video img{
 	float: left;
 	width: 68px;
 	height: 56px;
@@ -236,35 +249,41 @@ h2{font: bold 20px "BebasRegular", sans-serif; text-transform: uppercase;}
 	overflow: hidden;
 }
 
-.list-slider .icon-video ul li{
+.article-slider .icon-video ul li{
 	float: left;
-	margin-bottom: 18px;
+	margin-bottom: 17px;
 	padding-left: 20px;
 	width: 205px;
 }
 
-.list-slider .icon-video ul li h4{
+.article-slider .icon-video h4{
 	font: 12px 'Arial', sans-serif;
 	font-weight: bold; 
 	margin-top: 4px;
+}
+
+.article-slider .icon-video h4:hover{
+	color: #cf0000;
 }
 
 .lorem-red{
 	color: #cf0000;
 }
 
-.list-slider .icon-video ul{
+.article-slider .icon-video ul{
 	padding-top: 10px;
 }
 
-.list-slider .icon-video ul li:last-child{
+.article-slider .icon-video ul li:last-child{
 	margin-bottom: 7px;
 }
 
-.list-slider .btn-more, .world h2 span, .articles h2 span, .gallery h2 span, .tech-news h2 span, .desk-span, .popular-span{
+.article-slider .btn-more, .world h2 span, .articles h2 span, .gallery h2 span, .tech-news h2 span, .desk-span, .popular-span{
 	float: right;
 	background: #cf0000;
-	padding: 5px 8px 6px 12px;
+	padding: 6px 8px 8px 12px;
+	height: 9px;
+	line-height: 23px;
 	color: #fff;
 	text-transform: uppercase;
 	font: bold 10px 'Arial', sans-serif;
@@ -275,7 +294,6 @@ h2{font: bold 20px "BebasRegular", sans-serif; text-transform: uppercase;}
 	width: 250px;
 	float: right;
 	margin-top: 20px;
-	
 }
 
 .sidebar .albertafilm{
@@ -287,7 +305,11 @@ h2{font: bold 20px "BebasRegular", sans-serif; text-transform: uppercase;}
 
 .newsletter{
 	background: #e4e4e4; 
-	padding: 10px 14px 17px 14px;
+	padding: 10px 14px 8px 14px;
+}
+
+.newsletter p{
+	padding-bottom: 15px;
 }
 
 .newsletter h2{
@@ -416,18 +438,14 @@ h2{font: bold 20px "BebasRegular", sans-serif; text-transform: uppercase;}
 	border-bottom: 2px solid #cf0000;
 	margin-bottom: 17px;
 	margin-top: 21px;
-	line-height: 0.9;
+	line-height: 23px;
 }
 
 .tech-news h2{
 	margin-top: 12px;
 	border-bottom: 2px solid #cf0000;
 	margin-bottom: 16px;
-	line-height: 1;
-}
-
-.world h2 span, .articles h2 span, .gallery h2 span, .tech-news h2 span{
-	margin-top: -5px;
+	line-height: 23px;
 }
 
 .gallery span img{

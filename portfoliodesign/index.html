@@ -4,7 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<link rel="shortcut icon" href="images/favicon (1).ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+
+	<script type="text/javascript">
+	   $(document).ready(function() {
+	              $('.owl-carousel').owlCarousel({
+	                items:1, 
+	                loop:false,
+	                nav: true,
+	            });
+	              });
+	</script>
+
+
+
 	</head>
 	<body>
 	<div><a class="logo" href=""></a></div>
@@ -29,20 +45,29 @@
 				<div><a class="button-hire" href="">Hire Me</a></div>
 			</div>
 		</div>
-		<div class="slider">
-			<div class="wrapper">
-				<div class="slider-bg"></div> 
-				<div class="slider-photo">
-					<img src="images/slider.jpg" alt="">
-				</div>
-				<div class="row-back"></div>
-				<div class="row-forward"></div>
-			</div>
-		</div>
+
+		<div class="slider">  
+	        <div class="block-slider">
+	            <div class="wrapper">
+	            <div class="circle-left"></div>
+	                <div class="slider-photo">
+	                	<div class="owl-carousel">
+	                    	<div> <img src="images/slider.jpg" alt=""> </div>
+	                    	<div> <img src="images/slider-1.jpg" alt=""> </div>
+	                   	 	<div> <img src="images/slider-2.jpg" alt=""> </div>
+	                    	<div> <img src="images/slider-3.jpg" alt=""> </div>
+	                    	<div> <img src="images/slider-4.jpg" alt=""> </div>
+	                	</div>
+
+	              	</div>
+		        </div>    
+	        </div>
+	    </div>
+
 		<div class="inform">
 			<div class="wrapper">
 				<div class="block-inform">
-					<div class="notice" id="notice">
+					<div class="article-aboutme" id="article-aboutme">
 						<h3>about me</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur<br>
 						 adipiscing elit. Aenean placerat porttitor<br>
@@ -53,7 +78,7 @@
 						      nibh. Vestibulum volutpat justo sit amet nisi<br>
 						       auctor vitae rutrum dui porttitor.</p>
 					</div>
-					<div class="notice">
+					<div class="article-aboutme">
 						<h3>my services</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur<br>
 						 adipiscing elit. Aenean placerat porttitor<br>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MuseoSansItalic';
+    src: url('fonts/MuseoSansItalic.eot');
+    src: url('fonts/MuseoSansItalic.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansItalic.woff2') format('woff2'),
+         url('fonts/MuseoSansItalic.woff') format('woff'),
+         url('fonts/MuseoSansItalic.ttf') format('truetype'),
+         url('fonts/MuseoSansItalic.svg#MuseoSansItalic') format('svg');
+}

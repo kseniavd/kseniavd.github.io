@@ -1,0 +1,5 @@
+@media only screen and (max-width: 810px){
+	.wrapper, .one-bg, .main-bg{width: auto;}
+	.header{width: 98%;}
+}
+
