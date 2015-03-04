@@ -1,0 +1,18 @@
+--- 
+package_id: jquery
+package_version: 1.9.1
+distribution_raw_file: 1.9.1/jquery-1.9.1.min.js
+distribution_type: bin
+distribution_flavor: minified
+platform_id: all
+platform_vendor: all
+platform_version: all
+platform_arch: all
+name: jQuery 1.9.1 Minified Binary
+description: jQuery 1.9.1 Minified Binary
+distribution_notes: ""
+notify: "yes"
+distribution_version: 1
+distribution_file_uuid_string: openlogic-jquery-1.9.1-all-bin-minified-1
+release_date: "2013-02-08"
+distribution_file_uuid: 7b15423a9ac02ee355a914af5f0431b909190e9e1fd50c0547f57b5f4c21f963
