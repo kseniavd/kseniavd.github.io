@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'oswald_bold';
-    src: url('fonts/oswald_bold.eot');
-    src: url('fonts/oswald_bold.eot') format('embedded-opentype'),
-         url('fonts/oswald_bold.woff2') format('woff2'),
-         url('fonts/oswald_bold.woff') format('woff'),
-         url('fonts/oswald_bold.ttf') format('truetype'),
-         url('fonts/oswald_bold.svg#oswald_bold') format('svg');
-}

@@ -20,11 +20,12 @@
 				        nav: false,
 				        URLhashListener:true,
 				        autoplayHoverPause:true,
-				        startPosition: 'URLHash'
+				        startPosition: 'URLHash',
+				        responsiveClass:true
 				    });
             $('.thumbnail ul li a').click(function(){
-            	$('.thumbnail ul li a').removeClass("active");
-            	 $(this).addClass("active");
+            	$('.thumbnail ul li a').removeClass("active-slide");
+            	 $(this).addClass("active-slide");
             })
 
         	});
@@ -32,21 +33,18 @@
 
 </head>
 <body>
-	<div class="top-line"></div>
 
 	<div class="container">
 		<div class="wrapper">
-
 			<div class="header">
 				<div class="header-top">
 					<div class="logo">
 						<a href="#"><img src="images/logo.png" alt=""></a>
 					</div>
-					<div class="search">
-						<form name="search" action="#" method="post">
-				   			<input type="text" name="search" placeholder="Search"><button type="submit">GO</button>
-						</form>
-					</div>
+					<form method="post" name="search" action="#"  class="form-search">
+				   		<input type="text" name="search" placeholder="Search">
+				   		<button type="submit">GO</button>
+					</form>
 				</div>
 				<div class="nav">
 					<ul>
@@ -62,205 +60,183 @@
 				</div>
 			</div>
 
-			<div class="container-inner">
-				<div class="block-slider">
-		            <div class="wrapper">
-		              <div class="slider-photo">
-		                <div class="owl-carousel">
-		                    <div data-hash="slide1" class="active"> <img src="images/modern-art.jpg" alt=""> </div>
-		                    <div data-hash="slide2"> <img src="images/modern-art-2.jpg" alt=""> </div>
-		                    <div data-hash="slide3"> <img src="images/modern-art-3.jpg" alt=""> </div>
-		                    <div data-hash="slide4"> <img src="images/modern-art-4.jpg" alt=""> </div>
-		                </div>
-		              </div>  
-		              <div class="thumbnail">
-		                <ul>
-			                <li>
-			                  	<a class="active" href="#slide1">
-				                    <span class="number">1</span>
-				                    <span class="title">LOREM IPSUM DOLOP</span>
-			                    </a>
-			                 </li>
-		                  	<li>
-		                  		<a href="#slide2">
-			                        <span class="number">2</span>
-		                           	<span class="title">ULTRICIES PELLENTESQUE</span>
-		                  		</a>
-		                  	</li>
-		                  	<li>
-		                  		<a href="#slide3">
-		                  			<span class="number">3</span>
-		                            <span class="title">ALIQUAM IPSUM</span>
-		                  		</a>
-		                  	</li>
-		                  	<li>
-		                  		<a href="#slide4">
-		                  			<span class="number">4</span>
-		                            <span class="title">NULLAM SED MAURIS UT</span>
-		                  		</a>
-		                  	</li>
-		                </ul>
-		              </div>
-		            </div>    
-	            </div>
-			</div>
+			
+			<div class="slider">
+		        <div class="slider-photo">
+		            <div class="owl-carousel">
+		                <div data-hash="slide1" class="active"> <img src="images/modern-art.jpg" alt=""> </div>
+		                <div data-hash="slide2"> <img src="images/modern-art-2.jpg" alt=""> </div>
+		                <div data-hash="slide3"> <img src="images/modern-art-3.jpg" alt=""> </div>
+		                <div data-hash="slide4"> <img src="images/modern-art-4.jpg" alt=""> </div>
+		            </div>
+		        </div>  
+		        <div class="thumbnail">
+		            <ul>
+			            <li>
+			                <a class="active-slide" href="#slide1">
+				                <span class="number">1</span>
+				                <span class="title-slide">LOREM IPSUM DOLOP</span>
+			                </a>
+			            </li>
+		                <li>
+		                  	<a href="#slide2">
+			                    <span class="number">2</span>
+		                        <span class="title-slide">ULTRICIES PELLENTESQUE</span>
+		                  	</a>
+		                </li>
+		                <li>
+		                  	<a href="#slide3">
+		                  		<span class="number">3</span>
+		                        <span class="title-slide">ALIQUAM IPSUM</span>
+		                  	</a>
+		                </li>
+		                <li>
+		                  	<a href="#slide4">
+		                  		<span class="number">4</span>
+		                        <span class="title-slide">NULLAM SED MAURIS UT</span>
+		                  	</a>
+		                </li>
+		            </ul>
+		        </div>     
+	        </div>
 
-				<div class="content">
-					<div class="section-article">
-						<div class="block-article">
-							<div class="content-article">
-								<h2><span>About WhiteSquare</span></h2>
-								<div class="photo">
-									<img src="images/photo_top.png" alt="">
-								</div>
-								<div class="text">
-									<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
-									<a href="#">Read more</a>
-								</div>
-							</div>
+			<div class="content">
+				<div class="section-article">
+					<div class="block-article">
+						<div class="block-title">
+							<h2><span>About WhiteSquare</span></h2>
 						</div>
-						<div class="block-article"> 
-							<div class="content-article" id="content-article">
-								<h2><span>A word from OUR ceo</span></h2>
-								<div class="photo">
-									<img src="images/photo_top.png" alt="">
-								</div>
-								<div class="text">
-									<p class="block-text">“In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”</p>
-									<p class="podpis">Yane Naumoski, CEO</p>
-								</div>	
-							</div>
+						<div class="photo">
+							<img src="images/photo-big.png" alt="">
+						</div>
+						<div class="description">
+							<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+							<a href="#">Read more</a>
 						</div>
 					</div>
-				
-
-					<div class="section-teams">
-						<div class="block-article-teams">
-							<div class="article-teams">
-								<h2><span>services</span></h2>
-								<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
-								<p class="read"><a href="#">Read more</a></p>
-							</div>
+					<div class="block-article"> 
+						<div class="block-title">
+							<h2><span>A word from OUR ceo</span></h2>
 						</div>
-
-						<div class="block-article-teams">
-							<div class="article-teams">
-								<h2><span>our teams</span></h2>
-								<ul>
-									<li>
-										<img src="images/photo_middle.png" alt="">
-										<div class="title-text">
-											<h3>Lorem Ipsum</h3>
-											<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et</p>
-										</div>
-									</li>
-									<li>
-										<img src="images/photo_middle.png" alt="">
-										<div class="title-text">
-											<h3>Lorem Ipsum</h3>
-											<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et</p>
-										</div>
-									</li>
-									<li>
-										<img src="images/photo_middle.png" alt="">
-										<div class="title-text">
-											<h3>Lorem Ipsum</h3>
-											<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et</p>
-										</div>
-									</li>
-								</ul>
-							</div>
+						<div class="photo">
+							<img src="images/photo-big.png" alt="">
 						</div>
-
-						<div class="block-article-teams">
-							<div class="article-teams">
-								<h2><span>27/7/365 support</span></h2>
-								<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
-								<p class="read"><a href="#">Read more</a></p>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="section-logo">
-						<h2><span>Our clients</span></h2>
-						<div class="block-logo">
-							<ul>
-								<li><a class="icon-1" href="#"></a></li>
-								<li><a class="icon-2" href="#"></a></li>
-								<li><a class="icon-3" href="#"></a></li>
-								<li><a class="icon-4" href="#"></a></li>
-								<li><a class="icon-5" href="#"></a></li>
-								<li><a class="icon-6" href="#"></a></li>
-								<li><a class="icon-7" href="#"></a></li>
-							</ul>
+						<div class="description">
+							<p class="article-description">“In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”</p>
+							<span class="naumoski">Yane Naumoski, CEO</span>
 						</div>
 					</div>
 				</div>
+				
+
+				<div class="section-teams">
+					<div class="block-article-teams">
+						<div class="block-title">
+							<h2><span>services</span></h2>
+						</div>
+						<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+						<p class="read"><a href="#">Read more</a></p>	
+					</div>
+
+					<div class="block-article-teams">
+						<div class="block-title">
+							<h2><span>our teams</span></h2>
+						</div>
+						<ul>
+							<li>
+								<img src="images/photo-little.png" alt="">
+								<h3>Lorem Ipsum</h3>
+								<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et</p>
+							</li>
+							<li>
+								<img src="images/photo-little.png" alt="">
+								<h3>Lorem Ipsum</h3>
+								<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et</p>
+							</li>
+							<li>
+								<img src="images/photo-little.png" alt="">
+								<h3>Lorem Ipsum</h3>
+								<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et</p>		
+							</li>
+						</ul>	
+					</div>
+
+					<div class="block-article-teams">
+						<div class="block-title">
+							<h2><span>27/7/365 support</span></h2>
+						</div>
+						<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+						<p class="read"><a href="#">Read more</a></p>
+					</div>
+				</div>
+
+				<div class="section-clients">
+					<div class="block-title">
+						<h2><span>Our clients</span></h2>
+					</div>
+					<div class="our-clients">
+						<ul>
+							<li><a class="client-1" href="#"></a></li>
+							<li><a class="client-2" href="#"></a></li>
+							<li><a class="client-3" href="#"></a></li>
+							<li><a class="client-4" href="#"></a></li>
+							<li><a class="client-5" href="#"></a></li>
+							<li><a class="client-6" href="#"></a></li>
+							<li><a class="client-7" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	
 
 	<div class="footer">
-		
 		<div class="wrapper">
-			<div class="block-footer">
-				<div class="section-footer">
-					<div class="block-twitter">
-						<h3>Twitter feed</h3>
-			    		<a href="#"><time datetime="2012-10-23T08:23:11+07:00">23 oct</time></a>
-					    <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue
-					    </p>
-					</div>
-				</div>
-
-				<div class="section-footer">
-					<div class="block-sitemap-social">
-						<div class="sitemap">
-							<h3>Sitemap</h3>
-								<ul class="one">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">About</a></li>
-									<li><a href="#">Services</a></li>
-								</ul>
-								<ul class="two">
-									<li><a href="#">Partners</a></li>
-									<li><a href="#">Support</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-						</div>
-						<div class="social">
-							
-								<h3>Social networks</h3>
-								<div class="block-social-1">
-									<ul>
-										<li><a class="block-twitter-1" href="#"></a></li>
-								    	<li><a class="block-facebook" href="#"></a></li>
-								    	<li><a class="block-google" href="#"></a></li>
-								    </ul>
-							    </div>
-							    <ul class="block-social-2">
-							    	<li><a class="block-vimeo" href="#"></a></li>
-							    	<li><a class="block-youtube" href="#"></a></li>
-							    	<li><a class="block-flickr" href="#"></a></li>
-							    	<li><a class="block-instagram" href="#"></a></li>
-							    	<li><a class="block-rss" href="#"></a></li>
-							    </ul>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="copyright">
-					
-						<a class="logo_footer" href="#"><img src="images/Logo_footer1.png" alt=""></a>
-					    <p>Copyright © 2012 Whitesquare. A <a href="#">pcklab</a> creation</p>
-					
+			<div class="section-footer">
+				<div class="block-twitter">
+					<h3>Twitter feed</h3>
+			    	<a href="#"><time datetime="2012-10-23T08:23:11+07:00">23 oct</time></a>
+					<p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue</p>
 				</div>
 			</div>
-		</div>
-		
-	</div>
 
+			<div class="section-footer">
+				<div class="block-sitemap-social">
+					<div class="sitemap">
+						<h3>Sitemap</h3>
+						<ul>
+							<li class="home"><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="social">
+						<h3>Social networks</h3>
+						<ul class="block-social-1">
+							<li><a class="block-twitter-1" href="#"></a></li>
+							<li><a class="block-facebook" href="#"></a></li>
+							<li><a class="block-google" href="#"></a></li>
+						</ul>
+						<ul class="block-social-2">
+							<li><a class="block-vimeo" href="#"></a></li>
+							<li><a class="block-youtube" href="#"></a></li>
+							<li><a class="block-flickr" href="#"></a></li>
+							<li><a class="block-instagram" href="#"></a></li>
+							<li><a class="block-rss" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<a class="logo_footer" href="#"><img src="images/logo-footer.png" alt=""></a>
+				<p>Copyright © 2012 Whitesquare. A <a href="#">pcklab</a> creation</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'oswald_regular';
-    src: url('fonts/oswald_regular.eot');
-    src: url('fonts/oswald_regular.eot') format('embedded-opentype'),
-         url('fonts/oswald_regular.woff2') format('woff2'),
-         url('fonts/oswald_regular.woff') format('woff'),
-         url('fonts/oswald_regular.ttf') format('truetype'),
-         url('fonts/oswald_regular.svg#oswald_regular') format('svg');
-}

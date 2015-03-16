@@ -1,10 +1,22 @@
 @media only screen and (max-width: 960px){
 	.wrapper, .slider{width: auto;}
+	.slider-photo{width: auto; height: auto; max-width: 100%;}
+	.owl-stage-outer{width: auto; height: auto;}
 	.header{text-align: center; width: 98%; margin: 0 auto;}
 	.fusce, .nav-slider{width: 98%; margin: 0 auto;}
 	.content{width: 98%; margin: 0 auto;}
 	.section-logo {width: auto;}
-	.block-footer{width: auto; height: auto;}
+	.section-footer{width: auto; height: auto;}
+	.owl-item img{width: 100%; height: auto; max-width: 100%;}
+}
+
+@media only screen and (max-width: 940px){
+	.thumbnail {height: auto;padding-left: 20%}
+    .thumbnail ul li{margin-left: 0;}
+    .thumbnail ul li:first-child{margin-left: 0;}
+    .thumbnail li {width: 40%;float: left;position: relative; margin-bottom: 30px;}
+	.our-clients{width: 75%; text-align: center; margin-left: 100px;}
+	.our-clients ul li{margin-top: 20px;}
 }
 
 @media only screen and (max-width: 890px){
@@ -23,6 +35,7 @@
 	.copyright {float: none; width: 70%; margin-bottom: 20px;}
 	.copyright .logo_footer {float: none;}
 	.copyright p{width: 100%;}
+	.our-clients{width: 70%; text-align: center;}
 }
 
 @media only screen and (max-width: 680px){
@@ -36,7 +49,10 @@
     .block-logo ul {width: 100%;display: block;height: auto;}
     .block-logo li {width: 25%;float: left;position: relative; margin-bottom: 15px;}
     .block-logo a {text-align: left;width: 100%;text-indent: 25px;}
+    .title-slide, .active-slide .title-slide {font: 15px "Oswald",sans-serif;}
+    .our-clients{width: 80%; text-align: center; margin-left: 60px;}
 }
+
 
 @media only screen and (max-width: 580px){
 	.nav {height: auto;}
@@ -46,6 +62,14 @@
     .nav ul li a {padding: 10px 0;}
     .nav a {text-align: left;width: 100%;text-indent: 25px;}
     .fusce h1{font-size: 22px;}
+    .number{display: none;}
+    .our-clients{width: 95%; text-align: center; margin-left: 10px;}
+}
+
+@media only screen and (max-width: 500px){
+	.thumbnail ul li{margin-right: 40px;}
+	.thumbnail li { width: 35%;}
+	.our-clients{width: 95%; text-align: center; margin-left: 10px;}
 }
 
 @media only screen and (max-width: 480px){
@@ -57,4 +81,9 @@
 
 @media only screen and (max-width: 460px){
 	.photo{float: none;}
+}
+
+@media only screen and (max-width: 340px){
+	.title-slide, .active-slide .title-slide {font: 13px "Oswald",sans-serif;}
+	.thumbnail ul li{margin-right: 30px;}
 }

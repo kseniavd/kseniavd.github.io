@@ -1,3 +1,5 @@
+
+
 * {
 	margin: 0;	
 	padding: 0; 
@@ -11,13 +13,15 @@ ul{list-style:none; }
 body {
 	font: 12px Arial, sans-serif; 
 	color: #515151; 
-	background: url(./images/bg_phon.png); 
-	line-height: 1.6;
+	background: url(./images/bg_phon.png);
 	position: relative;
-	width: 100%;
 	background: #151515;
 	/*min-width: 1014px; */
 }
+
+p{line-height: 1.7; text-align: left;}
+
+h3{text-align: left;}
 
 .wrapper{ 
 	width: 1014px;
@@ -26,17 +30,18 @@ body {
 
 
 
-.header:after{content: ""; display: block;clear: both;} 
+.section-nav:after{content: ""; display: block;clear: both;} 
 
-.header{
-	position: relative;
-	border: solid 1px #222;
+.section-nav{
+	/*position: relative;
+	z-index: 1;*/
+	border-bottom: solid 1px #222;
 	background-image: -webkit-linear-gradient(bottom, #000, #131314);
 	background-image: -moz-linear-gradient(bottom, #000, #131314);
 	background-image: -o-linear-gradient(bottom, #000, #131314);
 	background-image: -ms-linear-gradient(bottom, #000, #131314);
 	background-image: linear-gradient(to top, #000, #131314);
-	z-index: 1;
+	
 }
 
 .logo{
@@ -53,70 +58,61 @@ body {
 
 .nav:after{content: ""; display: block;clear: both;}
 
+.nav ul{padding-left: 53px;}
+
 .nav ul li{float: left;}
 
 .nav ul li a{
 	text-transform: uppercase;
 	font: bold 13px Arial, sans-serif;
-	/*background: -webkit-gradient(linear, left bottom,left top,color-stop(0.2, #434343),color-stop(1, #848484));, white;
-	-webkit-background-clip: text;
-	background: -ms-gradient(linear, left bottom,left top,color-stop(0.2, #434343),color-stop(1, #848484));*/
 	color: #686868;
 	display: block;
 	padding: 25px 38px 23px 38px;
 }
 
 .nav ul li .active {
-	/*background: -webkit-gradient(linear, left bottom,left top,color-stop(0.2, #8c8c8c),color-stop(1, #e1e1e1));, white;
-	-webkit-background-clip: text;
-	background: -ms-gradient(linear, left bottom,left top,color-stop(0.2, #434343),color-stop(1, #848484));*/
 	color: #bcbcbc;
 	-ms-background-clip: text;
-	padding-left: 90px;
 }
 
 
 .nav ul li a:hover{
-	/*background: -webkit-gradient(linear, left bottom,left top,color-stop(0.2, #8c8c8c),color-stop(1, #e1e1e1));, white;
-	-webkit-background-clip: text;*/
 	color: #bcbcbc;
 }
 
 .nav .broke{padding-left: 170px;}
 
-#representation:after{content: ""; display: block;clear: both;} 
-
-#representation{
-	background: url(../images/band-bg-top.png) center;
-	height: 281px;
-	position: relative;
-}
+.representation:after{content: ""; display: block;clear: both;} 
 
 .representation{
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	top: 70px;
-	background: url(../images/repres.png);
+	background: url(../images/band-bg-top.png) center;
+	height: 281px;
+	text-align: center;
+
+}
+
+.block-representation{
+	display: inline-block;
+	margin-top: 70px;
+	background: url(../images/repres.png)no-repeat;
 	width: 695px;
 	height: 90px;
 }
 
-.button-hire{
-	background: url(../images/button-hire.png);
+.btn-hire{
+	display: block;
+	margin: 25px auto;
+	background: url(../images/button-hire.png)no-repeat;
 	width: 204px;
 	height: 48px;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	top: 190px;
-	left: 0;
-	right: 0;
-	text-indent: 100%;
-   	white-space: nowrap;
-   	overflow: hidden;
+}
+
+.btn-hire:hover{
+	display: block;
+	margin: 25px 418px;
+	background: url(../images/button-hire-1.png)no-repeat;
+	width: 204px;
+	height: 48px;
 }
 
 .slider:after{content: ""; display: block;clear: both;} 
@@ -129,6 +125,8 @@ body {
 	border-radius: 15px;
 	margin-right: auto;
 	margin-left: auto;
+	position: relative;
+	z-index: 50;
 }
 
 .owl-prev{
@@ -175,27 +173,25 @@ background: url(../images/prev-bg.png) no-repeat 0 0 ;
   padding: 28px 34px;
 }
 
-/*.circle-left{
-	width: 27px;
-	height: 55px;
-	background: url(../images/bg-row-back.png);
-}*/
-
+.section-inform{
+	width: 1014px;
+	margin: 0 auto;
+}
 
 .block-inform:after{content: ""; display: block;clear: both;}
 
 .block-inform{
-	padding: 30px 0 0 28px;
-	margin-bottom: 54px;
+	margin: 30px 0 54px 28px;
 }
 
-.block-inform .article-aboutme{
+.article-aboutme{
 	float: left;
 	border-right: 1px solid #2b2b2b;
 	width: 30%;
-	padding-left: 45px;
-	padding-bottom: 32px;
+	padding: 0 0 32px 45px;
 }
+
+.article-aboutme:first-child{padding-left: 0;}
 
 .article-aboutme h3{
 	text-transform: uppercase;
@@ -205,7 +201,9 @@ background: url(../images/prev-bg.png) no-repeat 0 0 ;
 	padding-top: 5px;
 }
 
-.article-aboutme:first-child{padding-left: 0;}
+.article-aboutme p{
+	padding-right: 50px;
+}
 
 .contacts{
 	float: left;
@@ -253,6 +251,12 @@ background: url(../images/prev-bg.png) no-repeat 0 0 ;
 	width: 15px;
 	height: 19px;
 	padding-left: 26px;
+	cursor: pointer;
+}
+
+.block-contact .download:hover{
+	text-decoration: underline;
+	color: #909295;
 }
 
 .email, .phone{margin-bottom: 7px;}
@@ -304,18 +308,13 @@ background: url(../images/prev-bg.png) no-repeat 0 0 ;
 	background: url(../images/band-bg-bottom.png) repeat-x;
 	height: 258px;
 	border-top: 1px solid #202020;
-	position: relative;
 	padding-top: 5px;
-	
 }
 
-.block-footer:after{content: ""; display: block;clear: both;}
-
-.footer-bottom{position: relative;}
 
 .friends{
-	float: left;
 	width: 306px;
+	float: left;
 }
 
 .friends .cap{
@@ -324,11 +323,10 @@ background: url(../images/prev-bg.png) no-repeat 0 0 ;
 	height: 109px;
 	float: left;
 	padding-right: 24px;
-	margin-top: 12px;
 	margin-left: 20px; 
 }
 
-.block-cap ul li{margin-bottom: 8px;}
+.block-cap ul li{margin-bottom: 8px; text-align: left;}
 
 .block-cap ul li a{
 	text-decoration: none;
@@ -338,36 +336,6 @@ background: url(../images/prev-bg.png) no-repeat 0 0 ;
 .block-cap ul li a:hover{
 	text-decoration: underline;
 	color: #909295;
-}
-
-.friends h3, .post h3{
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 13px;
-	padding-bottom: 10px;
-	padding-top: 5px;
-	line-height: 1.6;
-}
-
-.thank-you .block-thank{
-	background: url(../images/thank.png) no-repeat;
-	width: 163px;
-	height: 46px;
-	position: absolute;
-	top: 15px;
-	left: 442px;
-}
-
-.thank-you .button-works{
-	background: url(../images/button-works.png) no-repeat;
-	width: 202px;
-	height: 50px;
-	position: absolute;
-	top: 70px;
-	left: 425px;
-	text-indent: 100%;
-   white-space: nowrap;
-   overflow: hidden;
 }
 
 .post h3{padding-bottom: 0;}
@@ -380,9 +348,47 @@ background: url(../images/prev-bg.png) no-repeat 0 0 ;
 }
 
 .post{
-	float: right;
 	width: 234px;
+	float: right;
 }
+
+
+.friends h3, .post h3{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+	padding-bottom: 10px;
+	line-height: 1.6;
+}
+
+.thank-you {
+	margin: 0 234px 0 306px;
+}
+
+.thank-you .block-thank{
+	background: url(../images/thank.png) no-repeat;
+	width: 163px;
+	height: 46px;
+	margin: 0 auto;
+	margin-top: 12px;
+}
+
+.thank-you .btn-works{
+	display: block;
+	background: url(../images/button-works.png) no-repeat;
+	width: 202px;
+	height: 50px;
+	margin: 17px auto 0;
+}
+
+.thank-you .btn-works:hover{
+	display: block;
+	background: url(../images/button-works-1.png) no-repeat;
+	width: 202px;
+	height: 50px;
+	margin: 17px 136px 0;
+}
+
 
 .copyright:after{content: ""; display: block;clear: both;}
 
@@ -391,17 +397,21 @@ background: url(../images/prev-bg.png) no-repeat 0 0 ;
 	text-align: center;
 }
 
+.copyright a{color: #909295; text-decoration: none;}
+.copyright a:hover{text-decoration: underline;}
+
 .copyright p{
 	text-align: center;
 	padding-top: 20px;
 }
 
-.button-droptop{
+#toTop {
 	content: "";
 	background: url(../images/band-recent.png);
 	width: 29px;
 	height: 29px;
 	position: fixed;
-	right: 27%;
-	bottom: 12%;
+	z-index: 99;
+	right: 220px;
+	bottom: 80px;
 }

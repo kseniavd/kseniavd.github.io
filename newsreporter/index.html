@@ -20,13 +20,19 @@
 	                startPosition: 'URLHash',
 	                fluidSpeed: 300
 	            });
+
+	            $('.thumbnail ul li a').click(function(){
+            	$('.thumbnail ul li a').removeClass("active");
+            	 $(this).addClass("active");
+            })
+
 	              });
 	  </script>
 
 	</head>
 	<body>
 
-		<div id="wrapper">	
+		<div class="wrapper">	
 			<div id="header">
 				<div class="logo">
 					<a href="#"><img src="images/logo.png" alt=""></a> 
@@ -40,20 +46,21 @@
 						<li><a href="#">Login</a></li>
 					</ul>
 				</div>
-				<div class="social-form">
+				<div class="social-block">
 					<div class="social">
-						<a href="#"><img src="images/icon_twitter.png" alt=""></a>
-						<a href="#"><img src="images/icon_fb.png" alt=""></a>
-						<a href="#"><img src="images/icon_rss.png" alt=""></a>
-						<a href="#"><img class="active" src="images/icon_fb_like.png" alt=""></a>
-						<a class="last" href="#"><img src="images/icon_1.png" alt=""></a> 
+						<div class="icon-sosial">
+							<a href="#"><img src="images/icon_twitter.png" alt=""></a>
+							<a href="#"><img src="images/icon_fb.png" alt=""></a>
+							<a href="#"><img src="images/icon_rss.png" alt=""></a>
+						</div>
+						<div class="like">
+							<a href="#"><img class="active" src="images/icon_fb_like.png" alt=""></a>
+						</div>
 					</div>
-					
-					<form action="/" method="POST" id="search-block-form">
+					<form action="/" method="Post" id="search-form">
 					    <input type="text" name="form-search" placeholder="" class="form-search">
-					    <input type="button" name="button" class="form-button" value="#">
+					    <input type="button" name="button" class="form-button" value="">
 					</form>
-					
 				</div>
 			</div>
 			<div class="nav">
@@ -71,38 +78,18 @@
 				</ul>
 			</div>
 
-			
-			<div id="slider">
-		            <div class="slider">
-			              <div class="slider-photo">
-			                <div class="owl-carousel">
-			                    <div data-hash="slide1"><p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. </p><img src="images/galer_photo.jpg" alt=""> </div>
-			                    <div data-hash="slide2"><p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. </p><img src="images/galer_photo.jpg" alt=""> </div>
-			                    <div data-hash="slide3"><p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. </p><img src="images/galer_photo.jpg" alt=""> </div>
-			                    <div data-hash="slide4"><p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. </p><img src="images/galer_photo.jpg" alt=""> </div>
-			                </div>
-			              </div>  
-			              <div class="thumbnail">
-			                <ul>
-			                  <li><a href="#slide1" class="active"><img src="images/galer_minphoto-1.jpg" alt=""></a></li>
-			                  <li><a href="#slide2"><img src="images/galer_minphoto-2.jpg" alt=""></a></li>
-			                  <li><a href="#slide3"><img src="images/galer_minphoto-3.jpg" alt=""></a></li>
-			                  <li><a href="#slide4"><img src="images/galer_minphoto-4.jpg" alt=""></a></li>
-			                </ul>
-			              </div>
-			        <div><a class="button-news" href="#">Breaking news</a></div>
-		            </div>    
-		          
-				<div class="article-slider">
+		<div id="container">
+			<div id="right-col">
+				<div class="article-videos">
 					<div class="icon-video">
 						<ul>
 							<li>
 								<img src="images/icon_video.jpg" alt="">
-								<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h4>
+								<h4 class="title-lorem">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h4>
 							</li>
 							<li>
 								<img src="images/icon_video.jpg" alt="">
-								<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h4>
+								<h4 class="title-lorem">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h4>
 							</li>
 							<li>
 								<img src="images/icon_video.jpg" alt="">
@@ -110,193 +97,238 @@
 							</li>
 							<li>
 								<img src="images/icon_video.jpg" alt="">
-								<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h4>
+								<h4 class="title-lorem">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h4>
 							</li>
-
 						</ul>
 					</div>
-						<span class="btn-more">more +</span>
+					<span class="more">more +</span>
 				</div>
-			</div>	
 
-
-			<div id="main">
-				<div class="sidebar">
-					<img class="albertafilm" src="images/photo_albertafilm.jpg" alt="">
-					<div class="newsletter">
-						<h2>Sign Up for Newsletter</h2>
-						<p>Sign up to receive our free newsletters!</p>
-						<form action="/" method="post" class="search-form">
-						    <input type="text" name="name" class="txt" value="Name">
-						    <input type="email" name="email" class="txt" value="Email Address">
-						    <input type="submit" class="botton-search" name="submitbtn" value="submit">
-						</form>
-						<div class="spam">
-					    	<p>We do not spam. We value your privacy!</p>
-					    </div>
+				
+				<div class="albertafilm">
+					<a href=""><img src="images/photo_albertafilm.jpg" alt=""></a>
+				</div>
+				<div class="newsletter">
+					<h2>Sign Up for Newsletter</h2>
+					<p>Sign up to receive our free newsletters!</p>
+					<form action="/" method="post" id="sign-up-form">
+						<input type="text" name="name" class="sign-up-form" placeholder="Name" />
+						<input type="email" name="email" class="sign-up-form" placeholder="Email Address" />
+						<input type="submit" class="botton-search" name="submitbtn" value="submit" />
+					</form>
+					<p class="error">We do not spam. We value your privacy!</p>
 					</div>
-					<div class="popular">
-						<h2>popular<span>most read</span></h2>
+				<div class="popular">
+					<h2 class="title">popular<span>most read</span></h2>
 					<div class="block-popular">
-						<h4>Sept 24th 2011</h4>
-						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<span><a href="#"> Read More</a></span></p>
+						<h4 class="first-element">Sept 24th 2011</h4>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<a href="#"><span> Read More</span></a></p>
 					</div>
 					<div class="block-popular">
 						<h4>Sept 24th 2011</h4>
-						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<span><a href="#"> Read More</a></span></p>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<a href="#"><span> Read More</span></a></p>
 					</div>
 					<div class="block-popular">
 						<h4>Sept 24th 2011</h4>
-						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<span><a href="#"> Read More</a></span></p>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<a href="#"><span> Read More</span></a></p>
 					</div>
 					<div class="block-popular">
 						<h4>Sept 24th 2011</h4>
-						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<span><a href="#"> Read More</a></span></p>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<a href="#"><span> Read More</span></a></p>
 					</div>
 					<div class="block-popular"  id="block-popular">
 						<h4>Sept 24th 2011</h4>
-						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<span><a href="#"> Read More</a></span></p>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit<a href="#"><span> Read More</span></a></p>
 					</div>
-
-						<span class="popular-span">more +</span>
-						<img src="images/photo_kupon.jpg" alt="">
+					<span class="popular-more">more +</span>
+					<div class="save-50">
+						<a href=""><img src="images/photo_kupon.jpg" alt=""></a>
 					</div>
-					
 				</div>
-				<div class="main-content">
+			</div>
+
+			<div class="main-content">
+		        <div class="slider">
+			        <div class="slider-photo">
+			            <div class="owl-carousel">
+			                <div data-hash="slide1">
+								<div class="slide-info">
+			                    	<p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. </p>
+								</div>
+			                    <img src="images/galer-photo.jpg" alt="">
+			                </div>
+			                <div data-hash="slide2">
+								<div class="slide-info">
+									<p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. </p>
+								</div>
+			                    <img src="images/galer-photo-2.jpg" alt="">
+			                </div>
+			                <div data-hash="slide3">
+								<div class="slide-info">
+									<p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. </p>
+								</div>
+			                    <img src="images/galer-photo-3.jpg" alt="">
+			                </div>
+			                <div data-hash="slide4">
+								<div class="slide-info">
+									<p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. </p>
+								</div>
+			                    <img src="images/galer-photo-4.jpg" alt="">
+			                </div>
+			            </div>
+			        </div>  
+			        <div class="thumbnail">
+			            <ul>
+			                <li><a href="#slide1" class="active"><img src="images/galer-minphoto-1.jpg" alt=""></a></li>
+			                <li><a href="#slide2"><img src="images/galer-minphoto-2.jpg" alt=""></a></li>
+			                <li><a href="#slide3"><img src="images/galer-minphoto-3.jpg" alt=""></a></li>
+			                <li><a href="#slide4"><img src="images/galer-minphoto-4.jpg" alt=""></a></li>
+			            </ul>
+			        </div>
+			    <div><a class="button-news" href="#">Breaking news</a></div>
+		            </div>
+		        
+				<div class="section-content">
 					<div class="content">
-							<div class="world">
-								<h2>from around the world<span>more +</span></h2>
-								<div class="block-world">
-									<a><img src="images/photo_world1.jpg" alt="#"></a>
-									<h4>Lorem ipsum dolor sit amet, consectetur </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-									<span><a href="">read more</a></span>
-								</div>
+						<div class="world">
+							<h2 class="title">from around the world<span class="more">more +</span></h2>
+							<div class="block-world">
+								<a><img src="images/photo_world1.jpg" alt="#"></a>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet, consectetur</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor eu mattis.</p>
+								<a href=""><span>read more</span></a>
+							</div>
 
-								<div class="block-world">
-									<a><img src="images/photo_world2.jpg" alt="#"></a>
-									<h4>Lorem ipsum dolor sit amet, consectetur </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-									<span><a href="">read more</a></span>
-								</div>
+							<div class="block-world">
+								<a><img src="images/photo_world2.jpg" alt="#"></a>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet, consectetur</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor eu mattis.</p>
+								<a href=""><span>read more</span></a>
+							</div>
 									
-								<div class="block-world">
-									<a><img src="images/photo_world3.jpg" alt="#"></a>
-									<h4>Lorem ipsum dolor sit amet, consectetur </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-									<span><a href="">read more</a></span>
-								</div>
+							<div class="block-world">
+								<a><img src="images/photo_world3.jpg" alt="#"></a>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet, consectetur</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor eu mattis.</p>
+								<a href=""><span>read more</span></a>
 							</div>
-							<div class="articles">
-								<h2>latest articles<span>more +</span></h2>
+						</div>
+						<div class="articles">
+							<h2 class="title">latest articles<span class="more">more +</span></h2>
 
-								<div class="block-latest">
-									<a><img src="images/photo_latest1.jpg" alt="#"></a>
-									<h4>Lorem ipsum dolor sit amet, consectetur </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-									<span><a href="">read more</a></span>
-								</div>
-
-								<div class="block-latest">
-									<a><img src="images/photo_latest2.jpg" alt="#"></a>
-									<h4>Lorem ipsum dolor sit amet, consectetur </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-									<span><a href="">read more</a></span>
-								</div>
-
-								<div class="block-latest">
-									<a><img src="images/photo_latest3.jpg" alt="#"></a>
-									<h4>Lorem ipsum dolor sit amet, consectetur </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-									<span><a href="">read more</a></span>
-								</div>
+							<div class="block-latest">
+								<a><img src="images/photo_latest1.jpg" alt="#"></a>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet, consectetur</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor eu mattis.</p>
+								<a href=""><span>read more</span></a>
 							</div>
-							<div  class="gallery">
-								<h2>gallery<span>more +</span></h2>
-								<img src="images/photo_gallery1.jpg" alt="">
-								<img src="images/photo_gallery2.jpg" alt="">
-								<img src="images/photo_gallery3.jpg" alt="">
-								<img src="images/photo_gallery4.jpg" alt="">
-								<img src="images/photo_gallery5.jpg" alt="">
-								<img src="images/photo_gallery6.jpg" alt="">
+
+							<div class="block-latest">
+								<a><img src="images/photo_latest2.jpg" alt="#"></a>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet, consectetur</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor eu mattis.</p>
+								<a href=""><span>read more</span></a>
 							</div>
-							<div class="tech-news">
-								<h2>tech news<span>more +</span></h2>
 
-								<div class="block-news block-block-news">
-									<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</p>
-									<span>by <a href="#">John Doe</a> | 29 comments</span>
-								</div>
-
-								<div class="block-news block-block-news">
-									<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</p>
-									<span>by <a href="#">John Doe</a> | 29 comments</span>
-								</div>
-
-								<div class="block-news">
-									<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</p>
-									<span>by <a href="#">John Doe</a> | 29 comments</span>
-								</div>
-
-								<div class="block-news">
-									<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h4>
-									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</p>
-									<span>by <a href="#">John Doe</a> | 29 comments</span>
-								</div>
+							<div class="block-latest">
+								<a><img src="images/photo_latest3.jpg" alt="#"></a>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet, consectetur</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor eu mattis.</p>
+								<a href=""><span>read more</span></a>
 							</div>
+						</div>
+						<div  class="gallery">
+							<h2 class="title">gallery<span class="more">more +</span></h2>
+							<div class="photo-gallery">
+								<a href=""><img src="images/photo_gallery1.jpg" alt=""></a>
+								<a href=""><img src="images/photo_gallery2.jpg" alt=""></a>
+								<a href=""><img src="images/photo_gallery3.jpg" alt=""></a>
+								<a href=""><img src="images/photo_gallery4.jpg" alt=""></a>
+								<a href=""><img src="images/photo_gallery5.jpg" alt=""></a>
+								<a href=""><img src="images/photo_gallery6.jpg" alt=""></a>
+							</div>
+						</div>
+						<div class="tech-news">
+							<h2 class="title">tech news<span class="more">more +</span></h2>
+
+							<div class="block-news news-block">
+								<h4 class="tech-title-lorem"><a href="">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor ...</p>
+								<span class="news-comments">by <a href="#">John Doe</a> | 29 comments</span>
+							</div>
+
+							<div class="block-news news-block">
+								<h4 class="tech-title-lorem"><a href="">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor ...</p>
+								<span class="news-comments">by <a href="#">John Doe</a> | 29 comments</span>
+							</div>
+
+							<div class="block-news">
+								<h4 class="tech-title-lorem"><a href="">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor ...</p>
+								<span class="news-comments">by <a href="#">John Doe</a> | 29 comments</span>
+							</div>
+
+							<div class="block-news">
+								<h4 class="tech-title-lorem"><a href="">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor ...</p>
+								<span class="news-comments">by <a href="#">John Doe</a> | 29 comments</span>
+							</div>
+						</div>
 					</div>
 					<div class="right-content">
 						<div class="desk">
-							<h2>from the desk</h2>
+							<h2 class="title">from the desk</h2>
 
 							<div class="block-desk">
-								<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h4>
-								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</p>
-								<p><a href="#">read more</a><span>3 hours ago</span></p>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor ...</p>
+								<p><a href="#">read more</a><span class="hours">3 hours ago</span></p>
 							</div>
 
 							<div class="block-desk">
-								<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h4>
-								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</p>
-								<p><a href="#">read more</a><span>3 hours ago</span></p>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor ...</p>
+								<p><a href="#">read more</a><span class="hours">3 hours ago</span></p>
 							</div>
 
 							<div class="block-desk" id="block-desk">
-								<h4>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h4>
-								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</p>
-								<p><a href="#">read more</a><span>3 hours ago</span></p>
+								<h4 class="title-lorem"><a href="">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a></h4>
+								<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ull amcorper dolor ...</p>
+								<p><a href="#">read more</a><span class="hours">3 hours ago</span></p>
 							</div>
-							<span class="desk-span">more +</span>
+							<span class="more-desk">more +</span>
 						</div>
 						<div class="editorial">
-							<h2>editorial</h2>
+							<h2 class="title">editorial</h2>
 							<div class="block-editorial">
-								<img src="images/photo_editorial1.jpg" alt="">
+								<a href=""><img src="images/photo_editorial1.jpg" alt=""></a>
 								<a href="#"><h4>Lorem ipsum dolor sit amet con se cte tur adipiscing elit</h4></a>
 							</div>
 							<div class="block-editorial">
-								<img src="images/photo_editorial2_4.jpg" alt="">
+								<a href=""><img src="images/photo_editorial2_4.jpg" alt="">
 								<a href="#"><h4>Lorem ipsum dolor sit amet con se cte tur adipiscing elit</h4></a>
 							</div>
 							<div class="block-editorial">
-								<img src="images/photo_editorial3.jpg" alt="">
+								<a href=""><img src="images/photo_editorial3.jpg" alt=""></a>
 								<a href="#"><h4>Lorem ipsum dolor sit amet con se cte tur adipiscing elit</h4></a>
 							</div>
 							<div class="block-editorial">
-								<img src="images/photo_editorial2_4.jpg" alt="">
+								<a href=""><img src="images/photo_editorial2_4.jpg" alt=""></a>
 								<a href="#"><h4>Lorem ipsum dolor sit amet con se cte tur adipiscing elit</h4></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 			<div id="banner">
-				<img src="images/photo_firehost.jpg" alt="">
+				<a href=""><img src="images/photo_firehost.jpg" alt=""></a>
 			</div>
+
+		</div>	
+
+			
 			<div id="footer">
 				<div class="nav-footer">
 					<ul>
@@ -312,11 +344,8 @@
 						<li><a href="#">Blogs</a></li>
 					</ul>
 				</div>
-					<p>Copyright © 2011 The News Reporter Inc. All rights reserved. Theme designed by GraphicsFuel.com</p>
-					<p>Reproduction in whole or in part in any form or medium without express written permission of The News Reporter Inc. is prohibited. The trade marks and images used in the design are the copyright of their respective owners. They are used only for display purpose.</p>
-				
+				<p>Copyright © 2011 The News Reporter Inc. All rights reserved. Theme designed by <a href="">GraphicsFuel.com</a></p>
+				<p>Reproduction in whole or in part in any form or medium without express written permission of The News Reporter Inc. is prohibited. The trade marks and images used in the design are the copyright of their respective owners. They are used only for display purpose.</p>
 			</div>
-
-		</div>
 	</body>
 </html>
