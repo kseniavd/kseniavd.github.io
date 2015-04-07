@@ -1,0 +1,72 @@
+.parent-element {
+      background:url(sprite-b.png);
+}
+
+	
+ 
+ 
+background-position: 0 0; 46x46
+ 
+background-position: 0 -96px;47x47
+ 
+background-position: 0 -193px;47x47
+ 
+background-position: 0 -290px;47x47
+ 
+background-position: 0 -387px;35x35
+ 
+background-position: 0 -472px;35x35
+ 
+background-position: 0 -557px;35x35
+
+
+.parent-element {
+      background:url(contact.png);
+}
+
+ 
+ 
+background-position: 0 0px;23x23
+ 
+background-position: 0 -73px;23x23
+ 
+background-position: 0 -146px;23x23
+ 
+background-position: 0 -219px;23x23
+ 
+background-position: 0 -293px;23x23
+
+
+.parent-element {
+      background:url(skills.png);
+}
+
+
+ 
+ 
+background-position: 0 0;23x23
+ 
+background-position: 0 -73px;24x23
+ 
+background-position: 0 -146px;24x23
+ 
+background-position: 0 -219px;24x23
+ 
+background-position: 0 -292px;24x23
+
+
+.parent-element {
+      background:url(star-another.png);
+}
+
+
+ 
+background-position:     0 0px;13x13
+ 
+background-position:     0 -63px;13x12
+ 
+background-position:     0 -125px;14x13
+ 
+background-position:     0 -188px;14x13
+ 
+background-position:     0 -251px;14x13
