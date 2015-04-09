@@ -9,21 +9,16 @@
         <![endif]-->
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css"/>
         <link rel="stylesheet" href="css/animate.css" type="text/css"/>
         <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-        <script src="js/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/owl.carousel.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-                    $('.bxslider').bxSlider({
-                        controls:false,
-                        responsive: true
-                    });
-                    $('.bxslider-2').bxSlider({
-                        slideWidth: 400,
-                        minSlides: 2,
-                        maxSlides: 4,
-                        slideMargin: 0,
-                        responsive: true
+                    $('.owl-carousel').owlCarousel({
+                        items:1, 
+                        loop:false
                     });
 
 
@@ -47,12 +42,15 @@
                 $(window).scroll();  
 
 
+                $(".fancybox").fancybox();
 
+                $(".nav").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 1500);
+                });
 
-                    $(".nav li a").mouseenter(function(){
-                        $(".nav li a").removeClass("active");
-                        $(this).addClass("active");
-                    });
 
 
         $('.info').click(function(){
@@ -73,60 +71,56 @@
     </head>
     <body>
             <header id="header">
-                <div class="slider">
-                    <ul class="bxslider">
-                        <li>
+                <div class="slider-photo">
+                    <div class="owl-carousel">
+                        <div class="item">
                             <div class="description-slider"> 
-                                <h2 class="title-descr animating  fadeInLeft delay-2">We Design <span>Creative Website</span></h2>
-                                <h2 class="title-descr animating  fadeInLeft delay-3">For Enterprising People</h2>
-                                <div class="indent animating fadeInLeft delay-4">
+                                <h2 class="title-descr animating  fadeInLeft delay-2">We Design <span>Creative Website </span>For Enterprising People</h2>
+                                <div class="indent animating fadeInLeft delay-3">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisc ing elit.</p>
                                     <p> Aliquam viverra consectetur nibh a blan dit. Proin at amet consectetur adipisc lacinia nunc.</p>
                                 </div>
-                                <a href="#" class="btn-view animating fadeInLeft delay-5">View Projects</a>
+                                <a href="#" class="btn-view animating fadeInLeft delay-4">View Projects</a>
                             </div>
                             <img src="./images/slider-photo.jpg" />
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <div class="description-slider"> 
-                                <h2 class="title-descr">We Design <span>Creative Website</span></h2>
-                                <h2 class="title-descr">For Enterprising People</h2>
-                                <div class="indent">
+                                <h2 class="title-descr animating  fadeInLeft delay-2">We Design <span>Creative Website </span>For Enterprising People</h2>
+                                <div class="indent animating fadeInLeft delay-3">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisc ing elit.</p>
                                     <p> Aliquam viverra consectetur nibh a blan dit. Proin at amet consectetur adipisc lacinia nunc.</p>
                                 </div>
-                                <a href="#" class="btn-view">View Projects</a>
+                                <a href="#" class="btn-view animating fadeInLeft delay-4">View Projects</a>
                             </div>
                             <img src="./images/slider-photo-2.jpg" />
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <div class="description-slider"> 
-                                <h2 class="title-descr">We Design <span>Creative Website</span></h2>
-                                <h2 class="title-descr">For Enterprising People</h2>
-                                <div class="indent">
+                                <h2 class="title-descr animating  fadeInLeft delay-2">We Design <span>Creative Website </span>For Enterprising People</h2>
+                                <div class="indent animating fadeInLeft delay-3">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisc ing elit.</p>
                                     <p> Aliquam viverra consectetur nibh a blan dit. Proin at amet consectetur adipisc lacinia nunc.</p>
                                 </div>
-                                <a href="#" class="btn-view">View Projects</a>
+                                <a href="#" class="btn-view animating fadeInLeft delay-4">View Projects</a>
                             </div>
                             <img src="./images/slider-photo-3.jpg" />
-                        </li>
-                    </ul>
+                        </div>
+                    </div> 
                 </div>
                 
                 <nav>
                     <div class="wrapper">
                         <div class="logo animating slideInLeft">
-                            <a href=""><img src="images/logo.png" /></a> 
-                            <h1>Kreative<span>Pixel</span></h1>
+                            <a href=""><img src="images/logo.png" /></a>
                         </div>
                         <ul class="nav animating zoomIn">
                             <li><a class="active" href="#">Home</a></li>
-                            <li><a href="#">Features</a></li>
+                            <li><a href="#section-features">Features</a></li>
                             <li><a href="#">Shop</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#section-blog">Blog</a></li>
+                            <li><a href="#section-works">Work</a></li>
+                            <li><a href="#section-contact">Contact</a></li>
                         </ul>
                     </div>   
                 </nav>
@@ -136,39 +130,30 @@
                 <div id="section-features">
                     <div class="wrapper">
                         <div id="section">
-                            <div class="line"></div>
-                            <h2 class=" animating slideInLeft">Check Out <span>Features</span></h2>
+                            <h2 class="title animating slideInLeft">Check Out <span>Features</span></h2>
                             <div class="section-features animating zoomIn delay-1">
-                                <div class="bg-icon">
-                                    <img src="images/mobile-i.png">
-                                </div>
+                                <div class="bg-icon-features"><span class="icon-features"></span></div>
                                 <h3>Mobile Ready</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing. Aliquam viverra   dolor sit 
                                 consectetur nibh a blan.</p>
                                 <a class="btn-more" href="">Read  More</a>
                             </div>
                             <div class="section-features animating zoomIn delay-2">
-                                <div class="bg-icon">
-                                    <img src="images/html5-i.png">
-                                </div>
+                                <div class="bg-icon-features"><span class="icon-features2"></span></div>
                                 <h3>HTML5 Valid</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing. Aliquam viverra   dolor sit 
                                 consectetur nibh a blan.</p>
                                 <a class="btn-more" href="">Read  More</a>
                             </div>
                             <div class="section-features animating zoomIn delay-3">
-                                <div class="bg-icon">
-                                    <img src="images/css3-i.png">
-                                </div>
+                                <div class="bg-icon-features"><span class="icon-features3"></span></div>
                                 <h3>CSS3 Magic</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing. Aliquam viverra   dolor sit 
                                 consectetur nibh a blan.</p>
                                 <a class="btn-more" href="">Read  More</a>
                             </div>
                             <div class="section-features animating zoomIn delay-4">
-                                <div class="bg-icon">
-                                    <img src="images/star-i.png">
-                                </div>
+                                <div class="bg-icon-features"><span class="icon-features4"></span></div>
                                 <h3>Amazing design</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisc ing. Aliquam viverra   dolor sit 
                                 consectetur nibh a blan.</p>
@@ -177,10 +162,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-works">
+                <div id="section-works">
                     <div class="block-slider">
-                        <div class="line"></div>
-                        <h2 class=" animating slideInLeft">Our Latest <span>Works</span></h2>
+                        <h2 class="title animating slideInLeft">Our Latest <span>Works</span></h2>
                         <ul class="bxslider-2">
                             <li>
                                 <div class="view">
@@ -189,7 +173,7 @@
                                     <div class="content">
                                         <h2>Beatiful Mountain</h2>
                                         <p>Something more beautiful mountains photos.</p>
-                                        <a href="#" class="info"></a>
+                                        <a href="images/gallery-photo-1-b.jpg" rel="group" class="info fancybox"></a>
                                         <a href="#" class="info info-1"></a>
                                     </div>
                                 </div>
@@ -199,7 +183,7 @@
                                     <div class="content">
                                         <h2>Beatiful Mountain</h2>
                                         <p>Something more beautiful mountains photos.</p>
-                                        <a href="#" class="info"></a>
+                                        <a href="images/gallery-photo-5-b.jpg" class="info fancybox"></a>
                                         <a href="#" class="info info-1"></a>
                                     </div>
                                 </div>
@@ -211,7 +195,7 @@
                                     <div class="content">
                                         <h2>Beatiful Mountain</h2>
                                         <p>Something more beautiful mountains photos.</p>
-                                        <a href="#" class="info"></a>
+                                        <a href="images/gallery-photo-2-b.jpg" class="info fancybox"></a>
                                         <a href="#" class="info info-1"></a>
                                     </div>
                                 </div>
@@ -221,7 +205,7 @@
                                     <div class="content">
                                         <h2>Beatiful Mountain</h2>
                                         <p>Something more beautiful mountains photos.</p>
-                                        <a href="#" class="info"></a>
+                                        <a href="images/gallery-photo-6-b.jpg" class="info fancybox"></a>
                                         <a href="#" class="info info-1"></a>
                                     </div>
                                 </div>
@@ -233,7 +217,7 @@
                                     <div class="content">
                                         <h2>Beatiful Mountain</h2>
                                         <p>Something more beautiful mountains photos.</p>
-                                        <a href="#" class="info"></a>
+                                        <a href="images/gallery-photo-3-b.jpg" class="info fancybox"></a>
                                         <a href="#" class="info info-1"></a>
                                     </div>
                                 </div>
@@ -243,7 +227,7 @@
                                     <div class="content">
                                         <h2>Beatiful Mountain</h2>
                                         <p>Something more beautiful mountains photos.</p>
-                                        <a href="#" class="info"></a>
+                                        <a href="images/gallery-photo-7-b.jpg" class="info fancybox"></a>
                                         <a href="#" class="info info-1"></a>
                                     </div>
                                 </div>
@@ -255,7 +239,7 @@
                                     <div class="content">
                                         <h2>Beatiful Mountain</h2>
                                         <p>Something more beautiful mountains photos.</p>
-                                        <a href="#" class="info"></a>
+                                        <a href="images/gallery-photo-4-b.jpg" class="info fancybox"></a>
                                         <a href="#" class="info info-1"></a>
                                     </div>
                                 </div>
@@ -265,7 +249,7 @@
                                     <div class="content">
                                         <h2>Beatiful Mountain</h2>
                                         <p>Something more beautiful mountains photos.</p>
-                                        <a href="#" class="info"></a>
+                                        <a href="images/gallery-photo-8-b.jpg" class="info fancybox"></a>
                                         <a href="#" class="info info-1"></a>
                                     </div>
                                 </div>
@@ -273,49 +257,47 @@
                         </ul>
                     </div>
                 </div>
-                <div class="section-posts">
+                <div id="section-blog">
                     <div class="wrapper">
-                        <div class="line"></div>
-                        <h2 class=" animating slideInLeft delay-1" >Recent <span>Blog Posts</span></h2>
+                        <h2 class="title animating slideInLeft delay-1" >Recent <span>Blog Posts</span></h2>
                         <div class="article animating slideInLeft delay-1">
-                            <div class="main">
+                            
                                 <img src="images/blog-photo-1.jpg">
-                                <img class="submain" src="images/blog-person-1.png">
-                            </div>
+                                <img class="submain" src="images/blog-person-1.jpg">
+                            
                             <div class="article-block">
-                                <a href=""><span>January 11, 2014</span></a>
+                                <h6>January 11, 2014</h6>
                                 <p>Lorem ipsum dolor sit amet, 
                                 consectetur adipiscing. Aliquam viverra   dolor sit consectetur.</p>
                             </div>
                         </div>
                         <div class="article animating zoomIn delay-2">
-                            <div class="main">
+                            
                                 <img src="images/blog-photo-2.jpg">
-                                <img class="submain-2" src="images/blog-person-2.png">
-                            </div>
+                                <img class="submain-2" src="images/blog-person-2.jpg">
+                            
                             <div class="article-block">
-                                <a href=""><span>January 10, 2014</span></a>
+                                <h6>January 10, 2014</h6>
                                 <p>Lorem ipsum dolor sit amet, 
                                 consectetur adipiscing.</p>
                             </div>
                         </div>
                         <div class="article animating slideInRight delay-1">
-                            <div class="main">
+                            
                                 <img src="images/blog-photo-3.jpg">
-                                <img class="submain-3" src="images/blog-person-3.png">
-                            </div>
+                                <img class="submain-3" src="images/blog-person-3.jpg">
+                            
                             <div class="article-block">
-                                <a href=""><span>January 09, 2014</span></a>
+                                <h6>January 09, 2014</h6>>
                                 <p>Lorem ipsum dolor sit amet, 
                                 consectetur adipiscing. Aliquam viverra   dolor sit consectetur.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="section-mup">
+                <div id="section-contact">
                     <div class="contact animating zoomIn delay-2">
-                            <div class="line"></div>
-                            <h2>Contact Us <span>Now</span></h2>
+                            <h2 class="title">Contact Us <span>Now</span></h2>
                             <p>Lorem ipsum address line1, address line 2</p>
                             <p>0414 459 237</p>
                             <a href="#">info@elegantbizz.com</a>
