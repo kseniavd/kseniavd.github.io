@@ -13,56 +13,9 @@
         <link rel="stylesheet" href="css/animate.css" type="text/css"/>
         <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
         <script src="js/owl.carousel.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                    $('.owl-carousel').owlCarousel({
-                        items:1, 
-                        loop:false,
-                        responsive:true
-                    });
-
-                    $('.owl-carousel-2').owlCarousel({
-                        items:4, 
-                        loop:true,
-                        navigation : true,
-                        pagination: false,
-                        responsive: true
-                    });
-
-
-                    $(".animating").each(function() {
-                    var block = $(this);
-                    $(window).scroll(function() {
-                        var top = block.offset().top;
-                        var bottom = block.height() + top;
-                        top = top - $(window).height();
-                        var scroll_top = $(this).scrollTop();
-                        if ((scroll_top > top) && (scroll_top < bottom)) {
-                            if (!block.hasClass("animated")) {
-                                block.addClass("animated");
-                            }
-                        } else {
-                            //block.removeClass("animated");
-                        }
-                    });
-                   });
-
-                $(window).scroll();  
-
-
-                $(".fancybox").fancybox();
-
-                $(".nav").on("click","a", function (event) {
-                    event.preventDefault();
-                    var id  = $(this).attr('href'),
-                        top = $(id).offset().top;
-                    $('body,html').animate({scrollTop: top}, 1500);
-                });
-
-    });
-
-        </script>
+        <script type="text/javascript"></script>
     </head>
     <body>
             <header id="header">
@@ -112,14 +65,13 @@
                         <ul class="nav animating zoomIn">
                             <li><a class="active" href="#">Home</a></li>
                             <li><a href="#section-features">Features</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#section-blog">Blog</a></li>
                             <li><a href="#section-works">Work</a></li>
+                            <li><a href="#section-blog">Blog</a></li>
                             <li><a href="#section-contact">Contact</a></li>
                         </ul>
                     </div>   
                 </nav>
-            </header><!--id="header"-->
+            </header>
 
             <section id="container">
                 <div id="section-features">
@@ -388,6 +340,7 @@
                             <p>Lorem ipsum address line1, address line 2</p>
                             <p>0414 459 237</p>
                             <a href="#">info@elegantbizz.com</a>
+
                             <form class="form-submit">
                                 <input type="text" name="username" class="serch-form" placeholder="Name">
                                 <input type="email" name="email" placeholder="Email">
@@ -411,21 +364,6 @@
             <p class="copyright">KreativePixel © 2014 All Rights Reserved.</p>
         </footer><!--id="footer"-->
         <div id="toTop"></div>
-
-        <script type="text/javascript">
-            $(function() {
-                $(window).scroll(function() {
-                    if($(this).scrollTop() != 0) {
-                        $('#toTop').fadeIn();
-                    } else {
-                        $('#toTop').fadeOut();
-                    }
-                });
-                    $('#toTop').click(function() {
-                        $('body,html').animate({scrollTop:0},800);
-                    });
-                });
-        </script>
     </body>
 </html>
 
