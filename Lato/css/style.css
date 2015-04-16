@@ -315,13 +315,15 @@ nav .nav li a:hover, .nav li .active{
 	margin-bottom: 36px;
 }
 #section-features #section .section-features .bg-icon-features:hover .icon-features {
-	background: url(../images/mobile-sprite.png) no-repeat;
-	background-position: 0 -137px;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -735px -137px;
+	width: 35px;
+	height: 57px;
 }
 #section-features #section .section-features .icon-features{
 	display: inline-block;
-	background: url(../images/mobile-sprite.png) no-repeat;
-	background-position: 0 0;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -735px 0;
 	width: 35px;
 	height: 57px;
 	margin-top: 48px;
@@ -329,15 +331,15 @@ nav .nav li a:hover, .nav li .active{
 
 #section-features #section .section-features .icon-features2{
 	display: inline-block;
-	background: url(../images/html5-i-sprite.png) no-repeat;
-	background-position: 0 0;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -326px 0;
 	width: 55px;
 	height: 63px;
 	margin-top: 48px;
 }
 #section-features #section .section-features .bg-icon-features:hover .icon-features2{
-	background: url(../images/html5-i-sprite.png) no-repeat;
-	background-position: 0 -133px;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -326px -133px;
 }
 #section-features #section .section-features .bg-icon-features:hover{
 	border: 1px solid #fac81b;
@@ -346,27 +348,27 @@ nav .nav li a:hover, .nav li .active{
 }
 #section-features #section .section-features .icon-features3{
 	display: inline-block;
-	background: url(../images/css3-sprite.png) no-repeat;
-	background-position: 0 0;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -207px 0;
 	width: 69px;
 	height: 63px;
 	margin-top: 48px;
 }
 #section-features #section .section-features .bg-icon-features:hover .icon-features3{
-	background: url(../images/css3-sprite.png) no-repeat;
-	background-position: 0 -143px;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -207px -143px;
 }
 #section-features #section .section-features .icon-features4{
 	display: inline-block;
-	background: url(../images/star-sprite.png) no-repeat;
-	background-position: 0 0;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -992px 0;
 	width: 65px;
 	height: 62px;
 	margin-top: 48px;
 }
 #section-features #section .section-features .bg-icon-features:hover .icon-features4{
-	background: url(../images/star-sprite.png) no-repeat;
-	background-position: 0 -142px;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -992px -142px;
 }
 
 /*.gallery:after{content: ""; display: block;clear: both;}
@@ -411,7 +413,8 @@ nav .nav li a:hover, .nav li .active{
 }
 
 #section-works .block-slider-2 .owl-carousel-2 .owl-prev{
-	background: url(../images/prev.png) no-repeat 0 0 ;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -906px 0;
     width: 36px;
     height: 35px;
     display: block;
@@ -420,7 +423,8 @@ nav .nav li a:hover, .nav li .active{
 }
 
 #section-works .block-slider-2 .owl-carousel-2 .owl-next{
-	background: url(../images/next.png) no-repeat 0 0 ;
+	background: url(../images/sprites.png) no-repeat;
+	background-position: -820px 0; 
     width: 36px;
     height: 35px;
     display: block;
@@ -510,7 +514,7 @@ nav .nav li a:hover, .nav li .active{
 #section-contact .form-submit .btn{
 	display: block;
 	margin: 30px auto 0 auto;
-	background: url(../images/btn-form-sprite.png) no-repeat;
+	background: url(../images/sprites.png) no-repeat;
 	background-position: 0 0;
 	width: 71px;
 	height: 39px;
@@ -518,7 +522,7 @@ nav .nav li a:hover, .nav li .active{
 	padding: 40px 0;
 }
 #section-contact .form-submit .btn:hover{
-	background: url(../images/btn-form-sprite.png) no-repeat;
+	background: url(../images/sprites.png) no-repeat;
 	background-position: 0 -119px;
 	width: 71px;
 	height: 39px;
@@ -564,7 +568,8 @@ nav .nav li a:hover, .nav li .active{
 
 #toTop {
 	content: "";
-	background: url(../images/btn-top.png);
+	background: url(../images/sprites.png);
+	background-position: -121px 0;
 	width: 36px;
 	height: 35px;
 	position: fixed;
@@ -612,8 +617,8 @@ nav .nav li a:hover, .nav li .active{
     color: #fff;
 }
 #section-works .block-slider-2 .owl-carousel-2 .item-2 .view a.info {
-	background: url(../images/image-hover-icon.png)no-repeat;
-	background-position: 0 0;
+	background: url(../images/sprites.png)no-repeat;
+	background-position: -514px 0;
 	width: 33px;
 	height: 30px;
     display: inline-block;
@@ -623,7 +628,8 @@ nav .nav li a:hover, .nav li .active{
     margin-top: 22px;
 }
 #section-works .block-slider-2 .owl-carousel-2 .item-2 .view a.info-1{
-	background: url(../images/i-hover-2.png)no-repeat;
+	background: url(../images/sprites.png)no-repeat;
+	background-position: -431px 0;
 }
 #section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover img {
     transform: scale(1.1);
