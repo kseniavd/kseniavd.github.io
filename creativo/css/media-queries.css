@@ -34,10 +34,9 @@
 	.b-welcom .section-welcom .description-welcom ul li {font-size: 25px;}
 	.b-header{height: 0; }
 	.b-header .in { position: fixed; margin: 0 auto; height: 80px;}
-	.b-services .services-section {width: 33%;}
+	.b-services .services-section {width: 33%;padding: 0px 1.5%;}
 	.b-services .services-section p{font-size: 15px;}
 	.b-services .services-section .icon-services{padding: 58px;}
-	.b-services .services-section {padding: 0px 1.5%;}
 	.b-about .about-person {width: 33%;}
 	.progress-tracker ul li, .progress-tracker ul li.active {width: 12px; height: 12px;}
 	.b-container-progressbar .progressbar,
@@ -49,8 +48,8 @@
 	.b-facts ul li .numscroller {font-size: 30px;}
 	.b-blog .blog-section .blog-block .blog-img img {width: 100%;}
 	.b-blog .blog-section .blog-block .blog-descr {width: 100%;padding: 5px 5px;}
-	.b-blog .blog-section .blog-block .blog-descr h4 a{font-size: 18px;}
-	.b-blog .blog-section .blog-block .blog-descr h4 a{font-size: 17px; line-height: 1.5;}
+	.b-blog .blog-section .blog-block .blog-descr .blog-title-line{display: inline-block;}
+	.b-blog .blog-section .blog-block .blog-descr h4 a{font-size: 17px; line-height: 1.5; text-align: left;}
 	.b-clients ul li{width: 48%;}
 	.b-pricing .pricing {width: 48%;}
 	.b-sign-up form {width: 68%;}
@@ -63,7 +62,6 @@
 	.b-contact ul .address span {padding-left: 72px;font-size: 18px;}
 	.b-contact ul li {width: 30%;padding: 20px 0px;}
 	.b-contact ul li:last-child {margin-left: 6%;}
-	.b-contact-form form {width: 65%;}
 	.b-contact-form form {width: 70%;}
 }
 
@@ -79,7 +77,6 @@
 	h4 {font-size: 15px;}
 	.title-section {margin-bottom: 60px;}
 	.b-welcom .section-welcom .description-welcom {margin-bottom: 300px;}
-	.b-works .menu{display: block;margin: 0 1%;}
 	.b-welcom .section-welcom .description-welcom ul li {font-size: 20px;}
 	.b-welcom .section-welcom .description-welcom ul {padding-top: 14px;}
 	.b-header .b-nav .nav{display: none;}
@@ -88,6 +85,7 @@
 	.b-header .b-nav ul li{float: none; padding-bottom: 8px;}
 	.b-header .b-nav ul{margin-top: 80px;background: rgba(222,101,78,0.95); padding: 0px 20px 0px 0px;border-radius: 0 0 6px 6px;}
 	.b-services .services-section {width: 48%; margin-bottom: 50px;}
+	.b-works .menu{display: block;margin: 0 1%;}
 	.b-works .tabs{display: none;}
 	.b-works .tabs{margin-left: 1%; text-align: left; position: absolute; top: 50px; right: 0; z-index: 100;/*width: 100%;*/}
 	.b-works .tabs li{display: block; margin-top: 5px; line-height: 50px;}
@@ -102,25 +100,22 @@
 	.b-container-progressbar .progressbar-2 span,
 	.b-container-progressbar .progressbar-3 span{padding: 10px 0 0 20px; font-size: 14px;}
 	.b-facts ul li {width: 49%; margin-bottom: 40px;}
-	.b-blog .blog-section {width: 48%;}
 	.b-blog .blog-section .blog-block .blog-descr h4 a{font-size: 16px;}
 	.b-blog .blog-section {width: 48%;display: inline-block;}
+	.b-blog .blog-section .blog-block .blog-descr{text-align: center;}
 	.b-blog .blog-section .blog-block .blog-descr span,
 	.b-blog .blog-section .blog-block .blog-descr h4 a,
 	.b-blog .blog-section .blog-block .blog-descr p{text-align: center;}
 	.b-blog .blog-section .blog-block .blog-descr .more{float: none; display: inline-block;}
 	.b-blog .blog-section .blog-block .blog-descr .blog-title-line{display: inline-block;}
 	.b-clients ul li{width: 48%;}
-	.b-pricing .pricing {width: 70%;}
-	.b-pricing .pricing .per {width: 150px; height: 150px; margin-left: 30%;}
+	.b-pricing .pricing .per {width: 150px; height: 150px;margin-left: 25%;}
 	.b-pricing .pricing .per .number {font-size: 80px;}
 	.b-pricing .pricing .per .number span:before{top: 38px;left: 20px;}
 	.b-pricing {text-align: center;}
 	.b-pricing .pricing {width: 48%; padding-right: 13px;  padding-left: 13px; margin-bottom: 40px;} 
-	.b-pricing .pricing .per {margin-left: 28%;}
-	.b-contact ul li {width: 48%;padding: 20px 0;}
 	.b-contact ul li:last-child {margin-left: 26%;}
-	.b-contact ul li {width: 26%;}
+	.b-contact ul li {width: 26%;padding: 20px 0;}
 	.b-contact ul .phone::before {background: url("../img/contact-1-sm.png") no-repeat scroll 10px 8px transparent;}
 	.b-contact ul .phone span {padding-left: 63px;font-size: 17px;}
 	.b-contact ul .email::before {background: url("../img/contact-2-sm.png") no-repeat scroll 0px 10px transparent;}
@@ -128,16 +123,13 @@
 	.b-contact ul li:last-child {margin-left: 12%;}
 	.b-contact ul .address::before {background: url("../img/contact-3-sm.png") no-repeat scroll 0px 23px transparent;}
 	.b-contact ul .address span {padding-left: 59px;font-size: 17px;}
-	.b-contact-form form {width: 75%;margin-left: 9%;}
-	.b-sign-up form .email{width: 48%;}
-	.b-sign-up form .btn{width: 26%;}
-	.b-sign-up p{display: none;}
-	.b-sign-up form .email{height: 12px;}
-	.b-sign-up form .btn{font-size: 12px;}
 	.b-sign-up form {width: 75%;}
+	.b-contact-form form {width: 75%;margin-left: 9%;}
+	.b-sign-up form .email{width: 48%;height: 12px;}
+	.b-sign-up form .btn{width: 26%;font-size: 12px;}
+	.b-sign-up p{display: none;}
 	.btn{width: 89px;height: 42px;}
 	.b-footer ul li:last-child{margin-right: 0;}
-	
 }
 
 @media screen and (max-width: 680px){
@@ -145,11 +137,8 @@
 	.b-about .about-person {width: 85%;}
 	.b-container-progressbar .progressbar,
 	.b-container-progressbar .progressbar-2,
-	.b-container-progressbar .progressbar-3 {width: 80%;}
+	.b-container-progressbar .progressbar-3 {width: 80%;height: 36px;}
 	.b-container-progressbar {margin: 0px 10%;}
-	.b-container-progressbar .progressbar,
-	.b-container-progressbar .progressbar-2,
-	.b-container-progressbar .progressbar-3{height: 36px;}
 	
 }
 @media screen and (max-width: 600px){
@@ -191,10 +180,8 @@
 	.b-container-progressbar .progressbar-2 span,
 	.b-container-progressbar .progressbar-3 span{padding: 7px 0 0 10px; font-size: 12px;}
 	.b-blog {text-align: center;}
-	.b-blog .blog-section {width: 90%; margin-bottom: 40px;}
+	.b-blog .blog-section {width: 98%; margin-bottom: 40px;}
 	.b-blog .blog-section .blog-block .blog-descr h4 a {font-size: 20px;}
-	.b-blog .blog-section {width: 90%;}
-	.b-blog .blog-section {width: 98%;}
 	.b-clients ul li{width: 49%;}
 	.b-clients ul li .clients{width: 118px; height: 30px;}
 	.b-clients ul li .clients-1{background: url(../img/clients-1-sm.png) no-repeat;}
@@ -202,27 +189,18 @@
 	.b-clients ul li .clients-3{background: url(../img/clients-3-sm.png) no-repeat;}
 	.b-clients ul li .clients-4{background: url(../img/clients-4-sm.png) no-repeat;}
 	.b-clients ul li .clients-5{background: url(../img/clients-5-sm.png) no-repeat;}
-	.b-pricing .pricing {width: 85%;}
-	.b-pricing .pricing .per {width: 170px;height: 170px; margin-left: 24%;}
+	.b-pricing .pricing .per {width: 170px;height: 170px; margin-left: 29%;}
 	.b-pricing .pricing .per .number span::before {left: 30px;}
-	.b-pricing .pricing .per {margin-left: 29%;}
 	.b-pricing .pricing {width: 100%;}
 	.b-section-map{padding: 0px;}
-	.b-contact ul li {padding: 20px 20%;}
-	.b-contact ul li {width: 100%; margin-left: 1%;}
+	.b-contact ul li {width: 100%; margin-left: 1%;padding: 8px 15%;}
 	.b-contact ul li:first-child {margin-left: 1%;}
 	.b-contact ul li:last-child{margin-left: 1%;}
 	.b-contact ul .email::before {background: url(../img/contact-2-sm.png) no-repeat 0 6px;width: 55px;height: 55px;}
     .b-contact ul .phone:before{background: url(../img/contact-1-sm.png) no-repeat 0 9px;}
 	.b-contact ul .address:before{background: url(../img/contact-3-sm.png) no-repeat 0 13px ;}
-	.b-contact ul li {padding: 8px 15%;}
-	.b-contact-form form {width: 70%;}
-	.b-contact-form form {width: 80%;}
-	.b-contact-form form {margin-left: 5%;}
-	.b-sign-up form .email{width: 46%;margin-right: 10px;}
-	.b-sign-up form .btn{width: 24%;}
-	.b-sign-up form .email{float: none;}
-	.b-sign-up form .email {width: 73%;margin-right: 0;}
+	.b-contact-form form {width: 80%;margin-left: 5%;}
+	.b-sign-up form .email {width: 73%;margin-right: 0;float: none;}
 	.b-sign-up form .btn {width: 40%;margin: 20px auto;}
 	.btn{margin: 31px 42%;}
 	figcaption h4{font-size: 20px;}
