@@ -152,6 +152,16 @@ $(window).scroll(function() {
                 $(".b-header").removeClass("fixed")
         }
 
+        $($('.nav li a').get().reverse()).each(function(){
+		  console.log($($(this).attr("href")).offset().top,$(window).scrollTop())
+		  if ($(window).scrollTop()>$($(this).attr("href")).offset().top-1)
+			   {
+				    $('.nav li a').removeClass("active");
+				    $(this).addClass("active");
+				    return false;
+			   }
+		})
+
     });
 
 
@@ -181,7 +191,6 @@ $(window).scroll(function() {
 	});
 
   $(window).scroll();
-
 
 
 });
