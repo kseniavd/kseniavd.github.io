@@ -1,0 +1,251 @@
+@media screen and (max-width: 1172px){
+	.wrapper {width: auto;}
+	h1 {font-size: 70px;}
+	h2 {font-size: 44px;}
+	h3 {font-size: 24px;}
+	h4 {font-size: 21px;}
+	.title-section {margin-bottom: 100px;}
+	.b-welcom .section-welcom .description-welcom ul li {font-size: 28px;}
+	.b-works .tab_gallery ul .item .view img{max-width: 100%; height: auto; width: 100%; display: block;}
+	.b-works .tab_gallery ul .item .view{width: auto; height: auto;}
+	.b-about .about-person .about-content img{max-width: 100%; height: auto; width: 100%; display: block;}
+	.b-about .about-person{width: 33%}
+	.b-container-progressbar{max-width: 100%;}
+	.b-blog .blog-section{width: 48%;}
+	.b-blog .blog-section .blog-block .blog-img img{max-width: 100%; height: auto; width: 100%;}
+	.b-blog .blog-section .blog-block .blog-img{float: none;}
+	.b-blog .blog-section .blog-block .blog-descr{width: 100%; float: none;padding: 5px 25px;}
+	.b-blog .blog-section .blog-block .blog-descr h4 a{font-size: 19px;}
+	.b-blog .blog-section .blog-block .blog-descr .more{margin-right: 20px;}
+	.b-studio .slider-photo .owl-wrapper-outer{height: auto;}
+	.b-clients ul li{width: 24%; margin: 0 0 40px 0;}
+	.b-pricing .pricing {width: 33%;}
+	.b-pricing .pricing .per {width: 200px;margin-left: 17%;}
+	.b-sign-up form {width: 56%;}
+}
+
+@media screen and (max-width: 1024px){
+	h1 {font-size: 62px;}
+	h2 {font-size: 42px;}
+	h3 {font-size: 21px;}
+	h4 {font-size: 17px;}
+	.title-section {margin-bottom: 80px;}
+	.section-welcom{ padding-top: 55px;}
+	.b-welcom .section-welcom .description-welcom ul li {font-size: 25px;}
+	.b-header{height: 0; }
+	.b-header .in { position: fixed; margin: 0 auto; height: 80px;}
+	.b-services .services-section {width: 33%;}
+	.b-services .services-section p{font-size: 15px;}
+	.b-services .services-section .icon-services{padding: 58px;}
+	.b-services .services-section {padding: 0px 1.5%;}
+	.b-about .about-person {width: 33%;}
+	.progress-tracker ul li, .progress-tracker ul li.active {width: 12px; height: 12px;}
+	.b-container-progressbar .progressbar,
+	.b-container-progressbar .progressbar-2,
+	.b-container-progressbar .progressbar-3 {width: 75%;}
+	.b-container-progressbar {margin: 0px 12%;}
+	.b-facts h2 {font-size: 30px;}
+	.b-facts ul li{width: 24%;}
+	.b-facts ul li .numscroller {font-size: 30px;}
+	.b-blog .blog-section .blog-block .blog-img img {width: 100%;}
+	.b-blog .blog-section .blog-block .blog-descr {width: 100%;padding: 5px 5px;}
+	.b-blog .blog-section .blog-block .blog-descr h4 a{font-size: 18px;}
+	.b-blog .blog-section .blog-block .blog-descr h4 a{font-size: 17px; line-height: 1.5;}
+	.b-clients ul li{width: 48%;}
+	.b-pricing .pricing {width: 48%;}
+	.b-sign-up form {width: 68%;}
+	.b-sign-up form .btn {width: 28%;}
+	.b-contact ul .email::before {background: url(../img/contact-2-sm.png) no-repeat scroll 0% 0% transparent;width: 75px;height: 75px;}
+    .b-contact ul .phone:before{background: url(../img/contact-1-sm.png) no-repeat 10px 0;}
+	.b-contact ul .address:before{background: url(../img/contact-3-sm.png) no-repeat;}
+	.b-contact ul .phone span{padding-left: 82px;font-size: 19px;}
+	.b-contact ul .email span {padding-left: 84px;font-size: 20px;}
+	.b-contact ul .address span {padding-left: 72px;font-size: 18px;}
+	.b-contact ul li {width: 30%;padding: 20px 0px;}
+	.b-contact ul li:last-child {margin-left: 6%;}
+	.b-contact-form form {width: 65%;}
+	.b-contact-form form {width: 70%;}
+}
+
+@media screen and (max-width: 900px){
+	.pt-section {padding: 65px 0px 95px;}
+	.b-about .about-person {width: 48%;}
+	.b-section-map, .b-welcom{padding: 0;}
+}
+
+@media screen and (max-width: 800px){
+	h1 {font-size: 52px;}
+	h2 {font-size: 34px;}
+	h4 {font-size: 15px;}
+	.title-section {margin-bottom: 60px;}
+	.b-welcom .section-welcom .description-welcom {margin-bottom: 300px;}
+	.b-works .menu{display: block;margin: 0 1%;}
+	.b-welcom .section-welcom .description-welcom ul li {font-size: 20px;}
+	.b-welcom .section-welcom .description-welcom ul {padding-top: 14px;}
+	.b-header .b-nav .nav{display: none;}
+	.b-header .b-nav .nav{position: absolute; top: 0; right: 0; z-index: 100;}
+	.b-header .b-nav a#touch-menu{display: block;}
+	.b-header .b-nav ul li{float: none; padding-bottom: 8px;}
+	.b-header .b-nav ul{margin-top: 80px;background: rgba(222,101,78,0.95); padding: 0px 20px 0px 0px;border-radius: 0 0 6px 6px;}
+	.b-services .services-section {width: 48%; margin-bottom: 50px;}
+	.b-works .tabs{display: none;}
+	.b-works .tabs{margin-left: 1%; text-align: left; position: absolute; top: 50px; right: 0; z-index: 100;/*width: 100%;*/}
+	.b-works .tabs li{display: block; margin-top: 5px; line-height: 50px;}
+	.b-works .tabs .active{display: none;}
+	.b-tabs{position: relative; margin-bottom: 15px;}
+	.b-about .about-person {width: 48%;}
+	.progress-tracker{display: none;}
+	.b-container-progressbar .progressbar,
+	.b-container-progressbar .progressbar-2,
+	.b-container-progressbar .progressbar-3{height: 40px;}
+	.b-container-progressbar .progressbar span,
+	.b-container-progressbar .progressbar-2 span,
+	.b-container-progressbar .progressbar-3 span{padding: 10px 0 0 20px; font-size: 14px;}
+	.b-facts ul li {width: 49%; margin-bottom: 40px;}
+	.b-blog .blog-section {width: 48%;}
+	.b-blog .blog-section .blog-block .blog-descr h4 a{font-size: 16px;}
+	.b-blog .blog-section {width: 48%;display: inline-block;}
+	.b-blog .blog-section .blog-block .blog-descr span,
+	.b-blog .blog-section .blog-block .blog-descr h4 a,
+	.b-blog .blog-section .blog-block .blog-descr p{text-align: center;}
+	.b-blog .blog-section .blog-block .blog-descr .more{float: none; display: inline-block;}
+	.b-blog .blog-section .blog-block .blog-descr .blog-title-line{display: inline-block;}
+	.b-clients ul li{width: 48%;}
+	.b-pricing .pricing {width: 70%;}
+	.b-pricing .pricing .per {width: 150px; height: 150px; margin-left: 30%;}
+	.b-pricing .pricing .per .number {font-size: 80px;}
+	.b-pricing .pricing .per .number span:before{top: 38px;left: 20px;}
+	.b-pricing {text-align: center;}
+	.b-pricing .pricing {width: 48%; padding-right: 13px;  padding-left: 13px; margin-bottom: 40px;} 
+	.b-pricing .pricing .per {margin-left: 28%;}
+	.b-contact ul li {width: 48%;padding: 20px 0;}
+	.b-contact ul li:last-child {margin-left: 26%;}
+	.b-contact ul li {width: 26%;}
+	.b-contact ul .phone::before {background: url("../img/contact-1-sm.png") no-repeat scroll 10px 8px transparent;}
+	.b-contact ul .phone span {padding-left: 63px;font-size: 17px;}
+	.b-contact ul .email::before {background: url("../img/contact-2-sm.png") no-repeat scroll 0px 10px transparent;}
+	.b-contact ul .email span {padding-left: 62px;font-size: 18px;}
+	.b-contact ul li:last-child {margin-left: 12%;}
+	.b-contact ul .address::before {background: url("../img/contact-3-sm.png") no-repeat scroll 0px 23px transparent;}
+	.b-contact ul .address span {padding-left: 59px;font-size: 17px;}
+	.b-contact-form form {width: 75%;margin-left: 9%;}
+	.b-sign-up form .email{width: 48%;}
+	.b-sign-up form .btn{width: 26%;}
+	.b-sign-up p{display: none;}
+	.b-sign-up form .email{height: 12px;}
+	.b-sign-up form .btn{font-size: 12px;}
+	.b-sign-up form {width: 75%;}
+	.btn{width: 89px;height: 42px;}
+	.b-footer ul li:last-child{margin-right: 0;}
+	
+}
+
+@media screen and (max-width: 680px){
+	.b-welcom .section-welcom a{width: 16px; height: 4px;}
+	.b-about .about-person {width: 85%;}
+	.b-container-progressbar .progressbar,
+	.b-container-progressbar .progressbar-2,
+	.b-container-progressbar .progressbar-3 {width: 80%;}
+	.b-container-progressbar {margin: 0px 10%;}
+	.b-container-progressbar .progressbar,
+	.b-container-progressbar .progressbar-2,
+	.b-container-progressbar .progressbar-3{height: 36px;}
+	
+}
+@media screen and (max-width: 600px){
+	h1 {font-size: 40px;}
+	h2 {font-size: 32px;}
+	.b-welcom .section-welcom .description-welcom ul li {font-size: 18px;}
+	.b-services .services-section {width: 90%;}
+	.b-pricing .pricing {width: 80%;}
+	.b-contact ul li {width: 90%; margin-left: 25%;}
+	.b-contact ul li:first-child {margin-left: 25%;}
+	.b-contact ul li:last-child{margin-left: 25%;}
+	.b-sign-up form {width: 90%;}
+	.b-sign-up form .btn {font-size: 11px;}
+	.b-sign-up form .email{margin-right: 20px;}
+}
+
+@media screen and (max-width: 480px){
+	h1 {font-size: 28px;}
+	h2 {font-size: 29px;}
+	h3 {font-size: 21px;}
+	h3 {font-size: 14px;}
+	.pt-section {padding: 50px 0;}
+	.b-welcom{padding: 0;}
+	.b-welcom .section-welcom .description-welcom ul li {font-size: 13px;}
+	.b-welcom .section-welcom .description-welcom ul {padding-top: 8px;}
+	.description-welcom h2{font-size: 20px;}
+	.b-services .services-section p {font-size: 12px;}
+	.b-services .services-section .icon-services {padding: 45px;}
+	.b-services .services-section a.more {padding: 8px 13px;}
+	.b-works .tab_gallery ul .item .view a.info {font-size: 50px;margin-top: 20%;}
+	.b-works .tab_gallery ul li {width: 48%;}
+	.b-works .tabs li{margin-right: 0;}
+	.b-about .about-person {width: 90%;}
+	.b-about .about-person {width: 98%;}
+	.b-container-progressbar .progressbar,
+	.b-container-progressbar .progressbar-2,
+	.b-container-progressbar .progressbar-3{height: 30px;}
+	.b-container-progressbar .progressbar span,
+	.b-container-progressbar .progressbar-2 span,
+	.b-container-progressbar .progressbar-3 span{padding: 7px 0 0 10px; font-size: 12px;}
+	.b-blog {text-align: center;}
+	.b-blog .blog-section {width: 90%; margin-bottom: 40px;}
+	.b-blog .blog-section .blog-block .blog-descr h4 a {font-size: 20px;}
+	.b-blog .blog-section {width: 90%;}
+	.b-blog .blog-section {width: 98%;}
+	.b-clients ul li{width: 49%;}
+	.b-clients ul li .clients{width: 118px; height: 30px;}
+	.b-clients ul li .clients-1{background: url(../img/clients-1-sm.png) no-repeat;}
+	.b-clients ul li .clients-2{background: url(../img/clients-2-sm.png) no-repeat;}
+	.b-clients ul li .clients-3{background: url(../img/clients-3-sm.png) no-repeat;}
+	.b-clients ul li .clients-4{background: url(../img/clients-4-sm.png) no-repeat;}
+	.b-clients ul li .clients-5{background: url(../img/clients-5-sm.png) no-repeat;}
+	.b-pricing .pricing {width: 85%;}
+	.b-pricing .pricing .per {width: 170px;height: 170px; margin-left: 24%;}
+	.b-pricing .pricing .per .number span::before {left: 30px;}
+	.b-pricing .pricing .per {margin-left: 29%;}
+	.b-pricing .pricing {width: 100%;}
+	.b-section-map{padding: 0px;}
+	.b-contact ul li {padding: 20px 20%;}
+	.b-contact ul li {width: 100%; margin-left: 1%;}
+	.b-contact ul li:first-child {margin-left: 1%;}
+	.b-contact ul li:last-child{margin-left: 1%;}
+	.b-contact ul .email::before {background: url(../img/contact-2-sm.png) no-repeat 0 6px;width: 55px;height: 55px;}
+    .b-contact ul .phone:before{background: url(../img/contact-1-sm.png) no-repeat 0 9px;}
+	.b-contact ul .address:before{background: url(../img/contact-3-sm.png) no-repeat 0 13px ;}
+	.b-contact ul li {padding: 8px 15%;}
+	.b-contact-form form {width: 70%;}
+	.b-contact-form form {width: 80%;}
+	.b-contact-form form {margin-left: 5%;}
+	.b-sign-up form .email{width: 46%;margin-right: 10px;}
+	.b-sign-up form .btn{width: 24%;}
+	.b-sign-up form .email{float: none;}
+	.b-sign-up form .email {width: 73%;margin-right: 0;}
+	.b-sign-up form .btn {width: 40%;margin: 20px auto;}
+	.btn{margin: 31px 42%;}
+	figcaption h4{font-size: 20px;}
+}
+
+@media screen and (max-width: 320px){
+	h1 {font-size: 26px;}
+	h6 {font-size: 16px;}
+	h2 {font-size: 29px;}
+	h3 {font-size: 20px;}
+	.section-welcom {padding: 150px 0 50px;}
+	.b-services .services-section .icon-services {padding: 40px; width: 78px; height: 78px;}
+	.b-services .services-section .icon-services-1{background: url(../img/services-i-1.png) no-repeat center;}
+	.b-services .services-section .icon-services-2{background: url(../img/services-i-2.png) no-repeat center;}
+	.b-services .services-section .icon-services-3{background: url(../img/services-i-3.png) no-repeat center;}
+	.b-works .plus-gallery{margin: 22px 42%;}
+	.b-works .tab_gallery ul li {width: 48%;}
+	.b-experience h2 {font-size: 29px;}
+	.b-facts ul li .fun-icon {padding: 13% 15%;}
+	.b-pricing .pricing .per {margin-left: 18%;}
+	.b-contact ul li {padding: 20px 10%;}
+	.b-contact-form form {margin-left: 3.5%;}
+	.b-section-map .b-zoom a.zoom-out {line-height: 34px;}
+	.b-section-map .b-zoom a {font-size: 20px;width: 35px;height: 35px;margin-top: 17px;line-height: 36px;}
+	.b-footer ul li {margin: 5px;}
+}
