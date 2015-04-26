@@ -14,6 +14,9 @@ $(document).ready(function(){
                     });
 
 
+
+//-------------------------animating---------
+
                     $(".animating").each(function() {
                     var block = $(this);
                     $(window).scroll(function() {
@@ -34,14 +37,24 @@ $(document).ready(function(){
                 $(window).scroll();  
 
 
+//-------------------------fancybox---------
+
+
                 $(".fancybox").fancybox();
 
-                $(".nav").on("click","a", function (event) {
-                    event.preventDefault();
-                    var id  = $(this).attr('href'),
-                        top = $(id).offset().top;
-                    $('body,html').animate({scrollTop: top}, 1500);
-                });
+
+
+//-------------------------nav(переход к секции  по меню)---------
+
+               //$(".nav").on("click","a", function (event) {
+                    //event.preventDefault();
+                    //var id  = $(this).attr('href'),
+                        //top = $(id).offset().top;
+                   // $('body,html').animate({scrollTop: top}, 1500);
+                //});
+
+
+//-------------------------btn-top(переход вверх страницы)---------
 
 
                  $(window).scroll(function() {
@@ -53,6 +66,70 @@ $(document).ready(function(){
                 });
                     $('#toTop').click(function() {
                         $('body,html').animate({scrollTop:0},800);
+                        $('.nav li a').removeClass("active");
+                        $(this).addClass("active");
                     });
 
+                   
+
+$(window).scroll();
+
+//-------------------------nav {переход hover)---------
+
+
+     $(".nav").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 1500);
+                }); 
+
+     $('.nav li a').click(function(){
+                $('.nav li a').removeClass("active");
+                 $(this).addClass("active");
+            })
+
+$(window).scroll();
+//-------------------------fix menu--------
+
+$(window).scroll(function() {
+        if ($("#header").length > 0) {
+            if ($(window).scrollTop() > 57)
+                $("#header").addClass("fixed")
+            else
+                $("#header").removeClass("fixed")
+        }
+
     });
+
+
+    $(window).scroll();
+
+// Animation sctipt
+    // =================================================================
+
+  if (!isMobile) $(".animating").each(function () {
+        var block = $(this);
+        $(window).scroll(function() {
+            var top = block.offset().top;
+            var bottom = block.height()+top;
+            top = top - $(window).height();
+            var scroll_top = $(this).scrollTop();
+            if ((scroll_top > top) && (scroll_top < bottom)) {
+                if (!block.hasClass("animated")) {
+                    block.addClass("animated");
+                }
+            } else {
+                //block.removeClass("animated");
+            }
+        });
+    });
+
+  $(window).scroll();
+
+ if ($(window).scrollTop() >= $(this).offset().top - 1) {
+                $("section").removeClass("hover");
+                $(this).addClass("hover");
+            }
+
+});
