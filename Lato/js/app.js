@@ -99,6 +99,16 @@ $(window).scroll(function() {
             else
                 $("#header").removeClass("fixed")
         }
+        
+	$($('.nav li a').get().reverse()).each(function(){
+		console.log($($(this).attr("href")).offset().top,$(window).scrollTop())
+		if ($(window).scrollTop()>=$($(this).attr("href")).offset().top-1)
+			{
+				$('.nav li a').removeClass("active");
+				$(this).addClass("active");
+				return false;
+			}
+	})
 
     });
 
@@ -131,5 +141,110 @@ $(window).scroll(function() {
                 $("section").removeClass("hover");
                 $(this).addClass("hover");
             }
+
+//-------------------------map---------
+    if (window.google){
+
+            geocoder = new google.maps.Geocoder();
+
+            var map;
+              var oz = new google.maps.LatLng(42.69859,23.334044);
+              //var oz = offsetCenter(markers[0].getPosition(),0,-50);
+              //var ozm = new google.maps.LatLng(48.45815,35.024436);
+
+              var MY_MAPTYPE_ID = 'РјРѕСЏ РєР°СЂС‚Р°';
+
+              function initialize() {
+
+                
+
+                var mapOptions = {
+                  zoom: 16,
+                  center: oz,
+                  mapTypeControlOptions: {
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+                  },
+                  mapTypeId: MY_MAPTYPE_ID,
+                  disableDefaultUI: true,
+                  scrollwheel: false
+                };
+
+                map = new google.maps.Map(document.getElementById('map-canvas'),
+                    mapOptions);
+
+                var styledMapOptions = {
+                  name: 'Custom Style'
+                };
+
+                var customMapType = new google.maps.StyledMapType(0, styledMapOptions);
+
+                map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+
+              }
+                initialize();
+                
+
+
+
+          function addMarker(address,zoom,el) {
+            
+            geocoder.geocode( { 'address': address}, function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+                //In this case it creates a marker, but you can get the lat and lng from the location.LatLng
+                //offsetCenter(results[0].geometry.location, 350);
+                var markerImage = new google.maps.MarkerImage('../img/marker.png',new google.maps.Size(46,64),new google.maps.Point(0,0),new google.maps.Point(23,64));
+                var marker = new google.maps.Marker({
+                    icon: markerImage,
+                    map: map, 
+                    position: results[0].geometry.location
+                });
+                if (zoom>0) map.setZoom(zoom);
+                map.setCenter(marker.getPosition());
+                
+              } else {
+                alert("Geocode was not successful for the following reason: " + status);
+              }
+            });
+                
+          }
+
+
+        //adding markers from page
+
+        addMarker($("[data-adress]").text(),15,$("[data-adress]"));
+
+
+        
+
+    $("[data-map-zoom-in]").click(function() {
+            map.setZoom(map.getZoom() + 1);
+        map.setCenter(offsetCenter(markers[0].getPosition(), 0, -130));
+    });
+
+    $("[data-map-zoom-out]").click(function() {
+        map.setZoom(map.getZoom() - 1);
+        map.setCenter(offsetCenter(markers[0].getPosition(), 0, -130));
+    });
+
+
+        }
+
+//-------------------------nav---------
+
+
+     $(".nav").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 1500);
+                }); 
+
+     $('.b-nav ul li a').click(function(){
+                $('.b-nav ul li a').removeClass("active");
+                 $(this).addClass("active");
+            })
+
+
+
 
 });
