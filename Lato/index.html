@@ -14,6 +14,7 @@
         <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
         <script src="js/owl.carousel.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript"></script>
     </head>
@@ -335,27 +336,36 @@
                         </div>
                     </div>
                 </div>
-                <div id="section-contact">
+    <div id="section-contact">
                     
                         
- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2932.23764435627!2d23.334655500000004!3d42.6986886!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1428600858672" width="1610" height="704" frameborder="0" scrolling="no" style="border:0"></iframe>
+        <div id="map-canvas"></div>
+        <div class="b-control">
+            <div class="b-zoom">
+                <a class="zoom-in" data-map-zoom-in>+</a>
+                <a class="zoom-out" data-map-zoom-out>&ndash;</a>
+            </div>
+        </div>
                        
                     
-                    <div class="contact animating zoomIn delay-2">
-                            <h2 class="title-line">Contact Us <span>Now</span></h2>
-                            <p>Lorem ipsum address line1, address line 2</p>
-                            <p>0414 459 237</p>
-                            <a href="#">info@elegantbizz.com</a>
+        <div class="contact animating zoomIn delay-2">
+            <h2 class="title-line">Contact Us <span>Now</span></h2>
+            <p>Lorem ipsum address line1, address line 2</p>
+            <p>0414 459 237</p>
+            <a href="#">info@elegantbizz.com</a>
 
-                            <form class="form-submit">
-                                <input type="text" name="username" class="serch-form" placeholder="Name">
-                                <input type="email" name="email" placeholder="Email">
-                                <textarea rows="7" cols="50" name="text" placeholder="Message"></textarea>
-                                <button type="button" class="btn">
-                            </form>
-                    </div>
-                </div>
-            </section><!--id="container"-->
+            <form class="form-submit">
+                <input type="text" name="username" class="serch-form" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="text" placeholder="Message"></textarea>
+                <button type="button" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    </section><!--id="container"-->
+
         <footer id="footer">
             <div class="nav-bottom">
                 <ul>

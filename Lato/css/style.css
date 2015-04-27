@@ -72,7 +72,7 @@ html { overflow-x:  hidden;}
 footer{
 	background: #3d3d3d;
 	text-align: center;
-	margin-top: 120px;
+	/*margin-top: 120px;*/
 }
 
 
@@ -81,28 +81,29 @@ footer{
 /* forms input */
 
 
-form{
-	margin-top: 40px;
-}
+
 
 input{
 	background: #e66768;
 	border: none;
 	border: 1px solid #f5c2c3;
 	width: 180px;
-	height: 43px;
+	height: 45px;
 	padding: 0 20px;
 	margin-bottom: 18px;
-	float: left;
+	display: inline-block;
 }
 input[type="text"]{
-	margin-right: 12px;
+	margin-right: 15px;
 }
 textarea{
 	background: #e66768;
 	border: none;
+	width: 420px;
+	height: 124px;
 	border: 1px solid #f5c2c3;
 	padding: 20px 20px;
+    resize:none;
 }
 placeholder{
     color: #fff;
@@ -466,7 +467,7 @@ nav{height: 81px; }
 /*---------------------Section blog-------------------------*/
 
 #section-blog{
-	margin-bottom: 85px;
+	margin-bottom: 60px;
 }
 #section-blog .article:after{content: ""; display: block;clear: both;}
 
@@ -506,25 +507,23 @@ nav{height: 81px; }
 
 #section-contact:after{content: ""; display: block;clear: both;}
 
-#section-contact .map{
-	height: 704px;
-	width: 1610px;
-	position:absolute;
+#section-contact {
+	/*height: 704px;
+	width: 1610px;*/
+	position:relative;
 	z-index: 0; 
 }
-/*#section-contact .map{
-	width: 100%;
-}
+
 #section-contact .b-zoom{
 	position: absolute;
 	bottom: 150px;
 	right: 0;
-	cursor: pointer;
+
 }
 
 #section-contact .b-zoom a{
 	display: block;
-	color: #db5941;
+	color: #e66768;
 	font-size: 30px;
 	font-weight: 300;
 	width: 48px;
@@ -534,6 +533,7 @@ nav{height: 81px; }
 	margin-top: 17px;
 	text-align: center;
 	line-height: 48px;
+	cursor: pointer;
 }
 
 #section-contact .b-zoom a.zoom-out{
@@ -541,21 +541,20 @@ nav{height: 81px; }
 }
 
 #section-contact .b-zoom a:hover{
-	background: #db5941;
+	background: #4caf50;
 	color: #ffffff;
 }
 
 #map-canvas{
 	width: 100%;
 	height: 704px;
-}*/
+}
 #section-contact .contact{
-	position: relative;
-	top: 121px;
+	position: absolute;
+	top: 130px;
+	right: 25%;
 	z-index: 150;
-	width: 562px;
 	background: #e66768;
-	margin: 0 auto;
 }
 #section-contact .contact h2{
 	padding: 58px 0 30px 0;
@@ -573,18 +572,18 @@ nav{height: 81px; }
 	text-decoration: underline;
 }
 #section-contact .form-submit{
-	width: 490px;
+	width: 463px;
 	padding: 0 50px;
+	margin: 19px auto 0;
 }
 #section-contact .form-submit .btn{
 	display: block;
-	margin: 30px auto 0 auto;
+	margin: 40px auto 31px auto;
 	background: url(../images/sprites.png) no-repeat;
 	background-position: 0 0;
 	width: 71px;
 	height: 39px;
 	border: none;
-	padding: 40px 0;
 }
 #section-contact .form-submit .btn:hover{
 	background: url(../images/sprites.png) no-repeat;
