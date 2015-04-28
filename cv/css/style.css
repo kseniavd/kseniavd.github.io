@@ -170,10 +170,10 @@ aside{
 }
 #progress-skills span{
 	color: #fff;
-	padding-left: 32px;
+	padding-left: 40px;
 }
 #progress-skills li{
-	padding: 0 0 18px 0;
+	padding: 0 0 18px 8px;
 }
 #progress-skills li .skills-1:before{
 	content: "";
@@ -216,7 +216,7 @@ aside{
 	position: absolute;
 }
 .progress-bar{
-	padding-left: 30px;
+	padding-left: 40px;
 }
 .progress-bar progress {
     background-color: #fff;
@@ -343,6 +343,12 @@ aside{
 }
 .step-block ul{
 	padding-top: 5px;
+}
+.step-bg{
+	border-left: 3px solid #fff;
+	height: 50px;
+	margin-left: -37px;
+	padding-left: 37px;
 }
 .title-post:before{
 	content: "";
