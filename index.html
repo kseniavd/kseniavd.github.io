@@ -7,13 +7,15 @@
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="./css/style.css" type="text/css"/>
-        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" href="./cv/css/style.css" type="text/css"/>
+        <script type="text/javascript" src="./cv/js/jquery.colorbox-min.js"></script>
+        <script type="text/javascript" src="./cv/js/jquery.lazyload.mini.js"></script>
+        <script type="text/javascript" src="./cv/js/jquery-1.8.3.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-                        $( "#progressbar" ).progressbar({
+                   $(document).ready(function() {
+                         $( "#progressbar" ).progressbar({
                       });
-            });
         </script>
     </head>
     <body id="parallax-bg">
@@ -23,11 +25,11 @@
             </header><!--id="header"-->
 
             <section id="container">
-                <div id="wrapper">  
+                <div id="wrapper">
                     <aside>
                         <section>
                             <div class="me">
-                                <img src="images/my-photo.png">
+                                <img src="./cv/images/my-photo.png">
                                     <h1>Ksenia didenko</h1>
                                     <h3>HTML Coder</h3>
                             </div>
@@ -81,121 +83,52 @@
                                         <progress id="progressbar" value="90" max="100"></progress>
                                     </div>
                                 </li>
-                            </ul>
+                            </ul>  
                         </article>
                     </aside>
                     <div id="content">
                         <section id="title-portfolio">
-                            <h2><a href="../"><span>view my Portfolio</span></a></h2>
-                            <img class="top-photo" src="images/top-photo.jpg">
-                        </section>
-                        <section id="progress-step">
-                            <h2><span>Work Experince</span></h2>
-                                <div class="steps">
-                                    <section class="step-block">
-                                        <h3 class="title-post"><span>HTML coder</span></h3>
-                                        <div class="post"><span>Self-employed</span></div> 
-                                        <div class="period"><span>October 2014 — Current</span></div>
-                                        <ul>
-                                            <li>PSD to HTML5/CSS3;</li>
-                                            <li>PSD, PNG Conversions;</li>
-                                            <li>Top quality hand-coded webpages;</li>
-                                            <li>W3C Valid coding;</li>
-                                            <li>Clean code structure;</li>
-                                            <li>SEO friendly code, well commented;</li>
-                                            <li>Cross-browser compatibility;</li>
-                                            <li>Optimizing of images/CSS, CSS3, HTML5 code;</li>
-                                            <li>Pixel-perfect design conversion;</li>
-                                            <li>Fixed width or responsive layout.</li>
-                                        </ul>
-                                    </section>
-                                
-                                    <section class="step-block">
-                                        <h3 class="title-post">Content-manager</h3>
-                                        <div class="post"><span>Bineks  (IT company)</span></div>
-                                        <div class="period"><span>October 1013 — December 2014</span></div>
-                                        <ul>
-                                            <li>ranging, management of sites content;</li>
-                                            <li>site developing, promotion, working with social networks;</li>
-                                            <li>loading the sites with content, editing of articles and images;</li>
-                                            <li>composing /writing unique articles;</li>
-                                            <li>arrangement of IT conferences.</li>
-                                        </ul>
-                                    </section>
-                                
-                                    <section class="step-block">
-                                        <h3 class="title-post">Statistic worker</h3>
-                                        <div class="post"><span>Cupid PLC (IT company)</span></div>
-                                        <div class="period"><span>May 2013 — October 2013</span></div>
-                                        <ul>
-                                            <li>working with Excel, statistics;</li>
-                                            <li>making periodical statistical reports;</li>
-                                            <li>checking received information (from departments);</li>
-                                            <li>ranging and classification of information.</li>
-                                        </ul>
-                                    </section>
-                               
-                                     <section class="step-block">
-                                        <h3 class="title-post">Office-manager</h3>
-                                        <div class="post"><span>Garant (plastic windows)</span></div>
-                                        <div class="period"><span>Junuary 2007 — December 2009</span></div>
-                                    </section>
-                                
-                                    <section  class="step-block">
-                                        <h3 class="title-post">Human Resource Manager</h3>
-                                        <div class="post"><span>Aliance (security)</span></div>
-                                        <div class="period"><span>November 2002 — December 2007</span></div>
-                                    </section>
-                                
-                                    <section class="step-block">
-                                        <h3 class="title-post">Office-manager</h3>
-                                        <div class="step-bg">
-                                            <div class="post1"><span>“Telecom Sich”, “Ovat-Aero”, “Veteran VOV” (cereal crops)</span></div>
-                                            <div class=" period period2"><span>July 1999 - November 2002</span></div>
-                                        </div>
-                                    </section>
-                                </div>
-                        </section>
-                        <section id="education">
-                            <h2><span>Education</span></h2>
-                            <article>
-                                <h3>specialists of Computer Systems and Networks</h3>
-                                <div class="post1"><span>Zaporizhzhya National Technical University</span></div> 
-                                <div class="period1"><span>September 2002 — July 2008</span></div> 
-                            </article>
-                        </section>
-                        <section id="languages">
-                            <h2><span>Languages</span></h2>
-                            <article class="block-languages">
-                                 <figure>
-                                    <p><img src="images/flag-eng.png" alt="" /></p>
-                                    <figcaption>English</figcaption>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                    <span class="star-2"></span>
-                                    <span class="star-3"></span>
-                                </figure>
-                                <figure>
-                                    <p><img src="images/flag-uk.png" alt="" /></p>
-                                    <figcaption>Ukrainian</figcaption>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                </figure>
-                                <figure>
-                                    <p><img src="images/flag-russia.png" alt="" /></p>
-                                    <figcaption>Russian</figcaption>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                    <span class="star-1"></span>
-                                </figure>
-                            </article>
-                           
+                            <h2><span>My portfolio</span></h2>
+                            <figure> 
+                                <a href="http://kseniavd.github.io/creativo" target="_blank"><img src="./cv/images/maket.jpg"></a>
+                                <figcaption>Creativo</figcaption>
+                            </figure>
+                            <figure> 
+                                <a href="http://kseniavd.github.io/Lato" target="_blank"><img src="./cv/images/maket-0.jpg"></a>
+                                <figcaption>Lato</figcaption>
+                            </figure>
+                            <figure> 
+                                <a href="http://kseniavd.github.io/corporateblue" target="_blank"><img src="./cv/images/maket-1.jpg"></a>
+                                <figcaption>Corporate Blue</figcaption>
+                            </figure>
+                            <figure> 
+                                 <a href="http://kseniavd.github.io/jetro" target="_blank" ><img src="./cv/images/maket-2.jpg"></a>
+                                <figcaption>Jetro</figcaption>
+                            </figure>
+                            <figure> 
+                                 <a href="http://kseniavd.github.io/newsreporter" target="_blank" ><img src="./cv/images/maket-3.jpg"></a>
+                                <figcaption>News Reporter</figcaption>
+                            </figure>
+                            <figure> 
+                                 <a href="http://kseniavd.github.io/oldbook" target="_blank" ><img src="./cv/images/maket-4.jpg"></a>
+                                <figcaption>Old Book</figcaption>
+                            </figure>
+                            <figure> 
+                                 <a href="http://kseniavd.github.io/portfoliodesign" target="_blank" ><img src="./cv/images/maket-5.jpg"></a>
+                                <figcaption>Portfolio Design</figcaption>
+                            </figure>
+                            <figure> 
+                                 <a href="http://kseniavd.github.io/prageum" target="_blank" ><img src="./cv/images/maket-6.jpg"></a>
+                                <figcaption>Prageum</figcaption>
+                            </figure>
+                            <figure> 
+                                 <a href="http://kseniavd.github.io/procorp" target="_blank" ><img src="./cv/images/maket-7.jpg"></a>
+                                <figcaption>ProCorp</figcaption>
+                            </figure>
+                            <figure> 
+                                 <a href="http://kseniavd.github.io/revenant" target="_blank" ><img src="./cv/images/maket-8.jpg"></a>
+                                <figcaption>ReveNant</figcaption>
+                            </figure>
                         </section>
                     </div>
                 </div>
