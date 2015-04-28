@@ -50,11 +50,11 @@ ol,ul {list-style:none;}
 input[type="button"], input[type="submit"], button {cursor: pointer}
 
 
-#container{
+.container{
 	padding: 48px 0;
 }
 
-#wrapper{
+.wrapper{
 	margin: 0 auto;
 	max-width: 960px;
 	min-width: 300px;
@@ -65,7 +65,7 @@ input[type="button"], input[type="submit"], button {cursor: pointer}
 }
 
 aside{
-	width: 344px;
+	width: 346px;
 	background: #37474f;
 	float: left;
 }
@@ -158,10 +158,6 @@ aside{
 #contact .cont-5:before{
 	background-position: 0 -293px;
 }
-
-
-
- 
 #progress-skills{
 	padding: 0 0 50px 41px;
 }
@@ -280,7 +276,7 @@ aside{
 	position: absolute;
 	top: 43px;
 }
-#title-portfolio figure a img{
+#title-portfolio .portfolio a img{
 	margin-top: 28px;
 	
 }
@@ -406,14 +402,14 @@ aside{
 	position: absolute;
 	margin-left: -23px;
 }
-#languages figure{
+#languages .languages{
 	background: #fff;
 	padding: 27px  42px 0 0; 
     display: block;
     float: left; 
     text-align: center;
 }
-#languages figure p img{
+#languages .languages p img{
 	width: 109px;
 	height: 73px;
 	overflow: hidden;
@@ -421,7 +417,7 @@ aside{
 	border: none;
 	margin-bottom: 0;
 }
-#languages figure figcaption{
+#languages .languages .descr-languages{
 	text-transform: uppercase;
 	padding: 10px 0 5px 0;
 }
@@ -442,11 +438,11 @@ aside{
 	background-position: 0 -251px;
 }
 
-#title-portfolio figure{
+#title-portfolio .portfolio{
 	float: left;
 	margin: 0 48px 48px 0px;
 }
-#title-portfolio figcaption{
+#title-portfolio .portfolio .description-work{
 	padding-top: 20px;
 	font-size: 18px;
 }
