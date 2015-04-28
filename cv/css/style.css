@@ -255,6 +255,10 @@ aside{
 #title-portfolio h2{
 	margin-left: -4px;
 }
+#title-portfolio img.top-photo{
+	margin-top: 28px;
+	margin-bottom: 10px;
+}
 #title-portfolio h2 a,  #progress-step h2{
 	padding: 0 0 36px 0;
 	margin-left: -24px;
@@ -276,9 +280,9 @@ aside{
 	position: absolute;
 	top: 43px;
 }
-#title-portfolio img{
+#title-portfolio figure a img{
 	margin-top: 28px;
-	margin-left: 36px;
+	
 }
 
 .steps{
@@ -440,7 +444,7 @@ aside{
 
 #title-portfolio figure{
 	float: left;
-	margin: 0 48px 48px 18px;
+	margin: 0 48px 48px 0px;
 }
 #title-portfolio figcaption{
 	padding-top: 20px;
