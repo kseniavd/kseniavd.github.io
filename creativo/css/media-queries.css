@@ -184,11 +184,11 @@
 	.b-blog .blog-section .blog-block .blog-descr h4 a {font-size: 20px;}
 	.b-clients ul li{width: 49%;}
 	.b-clients ul li .clients{width: 118px; height: 30px;}
-	.b-clients ul li .clients-1{background: url(../img/clients-1-sm.png) no-repeat;}
-	.b-clients ul li .clients-2{background: url(../img/clients-2-sm.png) no-repeat;}
-	.b-clients ul li .clients-3{background: url(../img/clients-3-sm.png) no-repeat;}
-	.b-clients ul li .clients-4{background: url(../img/clients-4-sm.png) no-repeat;}
-	.b-clients ul li .clients-5{background: url(../img/clients-5-sm.png) no-repeat;}
+	.b-clients ul li .clients-1{background: url(../img/sprite-clients.png) no-repeat; background-position: -228px -3px}
+	.b-clients ul li .clients-2{background: url(../img/sprite-clients.png) no-repeat; background-position: -228px -84px}
+	.b-clients ul li .clients-3{background: url(../img/sprite-clients.png) no-repeat; background-position: -228px -165px}
+	.b-clients ul li .clients-4{background: url(../img/sprite-clients.png) no-repeat; background-position: -228px -242px}
+	.b-clients ul li .clients-5{background: url(../img/sprite-clients.png) no-repeat; background-position: -228px -324px}
 	.b-pricing .pricing .per {width: 170px;height: 170px; margin-left: 29%;}
 	.b-pricing .pricing .per .number span::before {left: 30px;}
 	.b-pricing .pricing {width: 100%;}

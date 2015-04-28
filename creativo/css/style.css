@@ -911,27 +911,32 @@ input[type="button"], input[type="submit"], button {
 	display: inline-block;
 }
 .b-clients ul li .clients-1{
-	background: url(../img/clients-1.png) no-repeat;
+	background: url(../img/sprite-clients.png) no-repeat;
+	background-position: 0 -6px;
 	width: 178px;
 	height: 44px;
 }
 .b-clients ul li .clients-2{
-	background: url(../img/clients-2.png) no-repeat;
+	background: url(../img/sprite-clients.png) no-repeat;
+	background-position: 0 -98px;
 	width: 178px;
 	height: 44px;
 }
 .b-clients ul li .clients-3{
-	background: url(../img/clients-3.png) no-repeat;
+	background: url(../img/sprite-clients.png) no-repeat;
+	background-position: 0 -194px;
 	width: 178px;
 	height: 44px;
 }
 .b-clients ul li .clients-4{
-	background: url(../img/clients-4.png) no-repeat;
+	background: url(../img/sprite-clients.png) no-repeat;
+	background-position: 0 -283px;
 	width: 178px;
 	height: 44px;
 }
 .b-clients ul li .clients-5{
-	background: url(../img/clients-5.png) no-repeat;
+	background: url(../img/sprite-clients.png) no-repeat;
+	background-position: 0 -379px;
 	width: 178px;
 	height: 44px;
 }
