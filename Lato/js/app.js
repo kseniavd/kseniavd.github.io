@@ -54,99 +54,92 @@ $(document).ready(function(){
                 //});
 
 //-------------------------map---------
-    // Google map control
-  // =================================================================
+   if (window.google){
 
-  if (window.google){
+      geocoder = new google.maps.Geocoder();
 
-    geocoder = new google.maps.Geocoder();
+      var map;
+          var oz = new google.maps.LatLng(42.69859,23.334044);
+          //var oz = offsetCenter(markers[0].getPosition(),0,-50);
+          //var ozm = new google.maps.LatLng(48.45815,35.024436);
 
-    var map;
-        var oz = new google.maps.LatLng(42.69859,23.334044);
-        //var oz = offsetCenter(markers[0].getPosition(),0,-50);
-        //var ozm = new google.maps.LatLng(48.45815,35.024436);
+          var MY_MAPTYPE_ID = 'РјРѕСЏ РєР°СЂС‚Р°';
 
-        var MY_MAPTYPE_ID = 'моя карта';
+          function initialize() {
 
-        function initialize() {
+            
 
-          
+            var mapOptions = {
+              zoom: 16,
+              center: oz,
+              mapTypeControlOptions: {
+                mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+              },
+              mapTypeId: MY_MAPTYPE_ID,
+              disableDefaultUI: true,
+              scrollwheel: false
+            };
 
-          var mapOptions = {
-            zoom: 16,
-            center: oz,
-            mapTypeControlOptions: {
-              mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-            },
-            mapTypeId: MY_MAPTYPE_ID,
-            disableDefaultUI: true,
-            scrollwheel: false
-          };
+            map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
 
-          map = new google.maps.Map(document.getElementById('map-canvas'),
-              mapOptions);
+            var styledMapOptions = {
+              name: 'Custom Style'
+            };
 
-          var styledMapOptions = {
-            name: 'Custom Style'
-          };
+            var customMapType = new google.maps.StyledMapType(0, styledMapOptions);
 
-          var customMapType = new google.maps.StyledMapType(0, styledMapOptions);
+            map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 
-          map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-
-        }
-      initialize();
-      
-
-
-
-    function addMarker(address,zoom,el) {
-      //In this case it gets the address from an element on the page, but obviously you  could just pass it to the method instead
-      //var address = "г. Днепропетровск, ул. Мандрыковская, 47";
-
-      geocoder.geocode( { 'address': address}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-          //In this case it creates a marker, but you can get the lat and lng from the location.LatLng
-          //offsetCenter(results[0].geometry.location, 350);
-          var markerImage = new google.maps.MarkerImage('./i/map-marker.png',new google.maps.Size(46,64),new google.maps.Point(0,0),new google.maps.Point(23,64));
-          var marker = new google.maps.Marker({
-            icon: markerImage,
-              map: map, 
-              position: results[0].geometry.location
-          });
-          if (zoom>0) map.setZoom(zoom);
-          //markers.push(marker);
-        //$(el).attr("marker",markers.length-1);
-        //map.setCenter(offsetCenter(marker.getPosition(),0,0));
-        map.setCenter(marker.getPosition());
-          
-        } else {
-          alert("Geocode was not successful for the following reason: " + status);
-        }
-      });
+          }
+        initialize();
         
+
+
+
+      function addMarker(address,zoom,el) {
+        
+        geocoder.geocode( { 'address': address}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            //In this case it creates a marker, but you can get the lat and lng from the location.LatLng
+            //offsetCenter(results[0].geometry.location, 350);
+            var markerImage = new google.maps.MarkerImage('../img/marker.png',new google.maps.Size(46,64),new google.maps.Point(0,0),new google.maps.Point(23,64));
+            var marker = new google.maps.Marker({
+              icon: markerImage,
+                map: map, 
+                position: results[0].geometry.location
+            });
+            if (zoom > 0)
+              map.setZoom(zoom);
+              markers.push(marker);
+              $(el).attr("marker", markers.length - 1);
+              map.setCenter(offsetCenter(marker.getPosition(), 0, -130));
+            
+          } else {
+            alert("Geocode was not successful for the following reason: " + status);
+          }
+        });
+          
+      }
+
+
+    
+
+
+    
+
+  $("[data-map-zoom-in]").click(function() {
+        map.setZoom(map.getZoom() + 1);
+      map.setCenter(offsetCenter(markers[0].getPosition(), 0, -130));
+  });
+
+  $("[data-map-zoom-out]").click(function() {
+      map.setZoom(map.getZoom() - 1);
+      map.setCenter(offsetCenter(markers[0].getPosition(), 0, -130));
+  });
+
+
     }
-
-
-  //adding markers from page
-
-  addMarker($("[data-adress]").text(),15,$("[data-adress]"));
-
-
- 
-
-$("[data-map-zoom-in]").click(function() {
-      map.setZoom(map.getZoom() + 1);
-    map.setCenter(offsetCenter(markers[0].getPosition(), 0, -130));
-});
-
-$("[data-map-zoom-out]").click(function() {
-    map.setZoom(map.getZoom() - 1);
-    map.setCenter(offsetCenter(markers[0].getPosition(), 0, -130));
-});
-
-
-  }
 
 //-------------------------btn-top(переход вверх страницы)---------
 

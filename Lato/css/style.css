@@ -551,8 +551,9 @@ nav{height: 81px; }
 }
 #section-contact .contact{
 	position: absolute;
-	top: 130px;
-	right: 25%;
+	bottom: 0;
+	left:50%; 
+	margin-left:-280px;
 	z-index: 150;
 	background: #e66768;
 }
@@ -572,7 +573,7 @@ nav{height: 81px; }
 	text-decoration: underline;
 }
 #section-contact .form-submit{
-	width: 463px;
+	width: 465px;
 	padding: 0 50px;
 	margin: 19px auto 0;
 }
