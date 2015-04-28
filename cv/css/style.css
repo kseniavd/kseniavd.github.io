@@ -112,7 +112,7 @@ aside{
 #content{
 	margin-left: 346px;
 	background: #fff;
-	padding-left: 56px;
+	/*padding-left: 56px;*/
 }
 
 #contact{
@@ -250,7 +250,10 @@ aside{
 
 #title-portfolio{
 	position: relative;
-	padding: 50px 0 22px 0;
+	padding: 50px 0 22px 17px;
+}
+#title-portfolio h2{
+	margin-left: 18px;
 }
 #title-portfolio h2 a,  #progress-step h2{
 	padding: 0 0 36px 0;
@@ -275,7 +278,7 @@ aside{
 }
 #title-portfolio img{
 	margin-top: 28px;
-	margin-left: -18px;
+	/*margin-left: -18px;*/
 }
 
 .steps{
@@ -435,14 +438,9 @@ aside{
 	background-position: 0 -251px;
 }
 
-
-
-
-
-
 #title-portfolio figure{
 	float: left;
-	margin: 0 48px 48px 0;
+	margin: 0 48px 48px 18px;
 }
 #title-portfolio figcaption{
 	padding-top: 20px;
