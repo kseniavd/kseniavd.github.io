@@ -57,8 +57,8 @@
 }
 
 @media only screen and (max-width: 680px){
-	/*.b-nav .nav li a{font-size: 12px;}*/
 	.slider-block .title, .slider-block .title-active{font-size: 12px; }
+	/*.b-nav .nav li a{font-size: 12px;}*/
 }
 
 @media only screen and (max-width: 670px){
@@ -75,27 +75,28 @@
 	.sitemap ul li {width: 23%;}
 	.block-social-1 li {width: 30%;}
 	.block-social-2 li {width: 18%;}
+	.b-nav .nav li {width: 60%;}
+	.thumbnail ul li {width: 34%;}
 }
 @media only screen and (max-width: 580px){
+	.fusce h1{font-size: 22px;}
+	.our-clients{width: 95%; text-align: center; margin-left: 10px;}
 	/*.b-nav {height: auto;}
     .b-nav .nav {width: 96%;display: block;height: auto;}
     .b-nav li {width: 50%;float: left;position: relative;}
     .b-nav li a {border-bottom: 1px solid #e7e7e7;border-right: 1px solid #e7e7e7; padding: 10px 0;}
     .b-nav .nav li a {padding: 10px 0;}
     .b-nav a {text-align: left;width: 100%;text-indent: 25px;}*/
-    .fusce h1{font-size: 22px;}
     /*.number{display: none;}*/
-    .our-clients{width: 95%; text-align: center; margin-left: 10px;}
 }
 
 @media only screen and (max-width: 500px){
+	.our-clients{width: 95%; text-align: center; margin-left: 10px;}
 	/*.thumbnail ul li{margin-right: 40px;}
 	.thumbnail li { width: 35%;}*/
-	.our-clients{width: 95%; text-align: center; margin-left: 10px;}
 }
 
 @media only screen and (max-width: 480px){
-	/*.logo{float: none;}*/
 	.search{float: left; margin-top: 15px;}
 	.section-footer{width: 100%; float: none;}
 	.block-logo li {width: 33%;float: left;position: relative; margin-bottom: 15px;}
@@ -110,6 +111,7 @@
 	.sitemap ul li {width: 16%;}
 	/*.b-nav a#touch-menu{margin-top: 25px;}
 	.owl-item{margin-top: 25px;}*/
+	/*.logo{float: none;}*/
 }
 
 @media only screen and (max-width: 460px){
@@ -117,7 +119,6 @@
 }
 
 @media only screen and (max-width: 340px){
-	/*.title-slide, .active-slide .title-slide {font: 13px "Oswald",sans-serif;}*/
 	.thumbnail ul li {width: 15%;}
 	.sitemap {width: 48%;}
 	.form-search {float: left;}
@@ -133,5 +134,5 @@
 	.block-social-2 li {width: 15%;}
 	.sitemap ul li {width: 26%;}
 	/*.thumbnail ul li{margin-right: 30px;}*/
-	
+	/*.title-slide, .active-slide .title-slide {font: 13px "Oswald",sans-serif;}*/
 }
