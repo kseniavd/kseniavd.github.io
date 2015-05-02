@@ -48,6 +48,8 @@ h3{font: 11px Tahoma, sans-serif;}
 .wrapper{
 	width: 960px;
 	margin: 0 auto;
+	min-width: 320px;
+	padding: 0 10px;
 }
 
 .header-top:after {content: ""; display: block;clear: both;}
@@ -86,32 +88,35 @@ h3{font: 11px Tahoma, sans-serif;}
     right: 0;
 }
 
-.nav:after {content: ""; display: block;clear: both;}
+.b-nav:after {content: ""; display: block;clear: both;}
 
-.nav{
+.b-nav{
 	border: 1px solid #e7e7e7;
 	background: #f3f3f3;
 	margin-top: 22px;
 	margin-bottom: 30px;
 	box-sizing: border-box;
 }
-.nav ul {display: table; width: 100%; table-layout: fixed;}
+.b-nav{
+	position: relative;
+}
+.b-nav .nav {display: table; width: 100%; table-layout: fixed;}
 
-.nav ul .active{background: #29c5e6;}
+.b-nav .nav .active{background: #29c5e6;}
 
-.nav ul li{
+.b-nav .nav li{
 	display: table-cell;
 	text-align: center;
 }
 
-.nav ul li a{
+.b-nav .nav li a{
 	color: #b2b2b2;
 	text-transform: uppercase;
 	display: block;
 	padding: 12px 0;	
 }
 
-.nav li.active a, .active, a:hover, .nav li:hover a{
+.b-nav li.active a, .active, a:hover, .b-nav li:hover a{
     color: #fff;
     margin-top: -1px;
 	border-top: transparent 1px solid;
@@ -119,9 +124,20 @@ h3{font: 11px Tahoma, sans-serif;}
 	border-bottom: transparent 1px solid;
 }
 
-.active, a:hover, .nav li:hover a{color: #ffffff;}
+.active, a:hover, .b-nav li:hover a{color: #ffffff;}
 
-.nav li:hover{background: #29c5e6;}
+.b-nav li:hover{background: #29c5e6;}
+
+.b-nav a#touch-menu{
+	background:  #e2e2e2 url(../images/touch-menu.png)no-repeat center center;
+	width: 22px;
+	height: 16px;
+	position: absolute;
+	top: 62px;
+	right: 10px;
+	padding: 18px 14px;
+	display: none;
+}
 
 /*____________________________________________________*/
 
@@ -394,7 +410,7 @@ h3{font: 11px Tahoma, sans-serif;}
 
 .footer{
 	background: #7e7e7e;
-	height: 142px;
+	/*height: 142px;*/
 	padding: 15px 0;
 }
 

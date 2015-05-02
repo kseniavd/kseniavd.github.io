@@ -2,21 +2,39 @@
 	.wrapper, .slider{width: auto;}
 	.slider-photo{width: auto; height: auto; max-width: 100%;}
 	.owl-stage-outer{width: auto; height: auto;}
-	.header{text-align: center; width: 98%; margin: 0 auto;}
+	.header{text-align: center; width: 100%; margin: 0 auto;}
 	.fusce, .nav-slider{width: 98%; margin: 0 auto;}
-	.content{width: 98%; margin: 0 auto;}
+	.content{width: 100%; margin: 0 auto;}
 	.section-logo {width: auto;}
 	.section-footer{width: auto; height: auto;}
 	.owl-item img{width: 100%; height: auto; max-width: 100%;}
 }
 
 @media only screen and (max-width: 940px){
-	.thumbnail {height: auto;padding-left: 20%}
+	.thumbnail {height: auto;/*padding-left: 20%*/}
     .thumbnail ul li{margin-left: 0;}
     .thumbnail ul li:first-child{margin-left: 0;}
     .thumbnail li {width: 40%;float: left;position: relative; margin-bottom: 30px;}
 	.our-clients{width: 75%; text-align: center; margin-left: 100px;}
 	.our-clients ul li{margin-top: 20px;}
+}
+
+@media only screen and (max-width: 800px){
+	.b-nav .nav{display: none;}
+	.b-nav .nav{position: absolute; top: -19px; left: 58px; z-index: 100; width: 30%;}
+	.b-nav a#touch-menu{display: block; left: 0px; margin-top: 10px; top: -30px;}
+	.b-nav {border:none;}
+	.b-nav .nav li{padding: 2px 19px; width: 30%;display: inline-block;margin-bottom: 5px;background: #e2e2e2;}
+	.b-nav li:hover{background: #29c5e6;}
+	.owl-item img {margin-top: 30px;}
+	.thumbnail ul li{width: 25%;}
+	.title-slide, .active-slide .title-slide{font-size: 14px;}
+	.copyright{float: none;}
+	.copyright .logo_footer{float: none;}
+	.section-footer{margin-bottom: 20px;}
+	.section-footer {width: 95%;}
+	.block-social-1 li {width: 18%;}
+	.block-social-2 li {width: 10%;}
 }
 
 @media only screen and (max-width: 890px){
@@ -39,44 +57,59 @@
 }
 
 @media only screen and (max-width: 680px){
-	.nav ul li a{font-size: 12px;}
+	/*.b-nav .nav li a{font-size: 12px;}*/
 	.slider-block .title, .slider-block .title-active{font-size: 12px; }
 }
 
 @media only screen and (max-width: 670px){
 	.fusce h1{font-size: 28px;}
 	.block-logo {height: auto;}
-    .block-logo ul {width: 100%;display: block;height: auto;}
+    .block-logo ul {width: 96%;display: block;height: auto;}
     .block-logo li {width: 25%;float: left;position: relative; margin-bottom: 15px;}
     .block-logo a {text-align: left;width: 100%;text-indent: 25px;}
     .title-slide, .active-slide .title-slide {font: 15px "Oswald",sans-serif;}
     .our-clients{width: 80%; text-align: center; margin-left: 60px;}
 }
 
-
+@media only screen and (max-width: 600px){
+	.sitemap ul li {width: 23%;}
+	.block-social-1 li {width: 30%;}
+	.block-social-2 li {width: 18%;}
+}
 @media only screen and (max-width: 580px){
-	.nav {height: auto;}
-    .nav ul {width: 100%;display: block;height: auto;}
-    .nav li {width: 50%;float: left;position: relative;}
-    .nav li a {border-bottom: 1px solid #e7e7e7;border-right: 1px solid #e7e7e7; padding: 10px 0;}
-    .nav ul li a {padding: 10px 0;}
-    .nav a {text-align: left;width: 100%;text-indent: 25px;}
+	/*.b-nav {height: auto;}
+    .b-nav .nav {width: 96%;display: block;height: auto;}
+    .b-nav li {width: 50%;float: left;position: relative;}
+    .b-nav li a {border-bottom: 1px solid #e7e7e7;border-right: 1px solid #e7e7e7; padding: 10px 0;}
+    .b-nav .nav li a {padding: 10px 0;}
+    .b-nav a {text-align: left;width: 100%;text-indent: 25px;}*/
     .fusce h1{font-size: 22px;}
-    .number{display: none;}
+    /*.number{display: none;}*/
     .our-clients{width: 95%; text-align: center; margin-left: 10px;}
 }
 
 @media only screen and (max-width: 500px){
-	.thumbnail ul li{margin-right: 40px;}
-	.thumbnail li { width: 35%;}
+	/*.thumbnail ul li{margin-right: 40px;}
+	.thumbnail li { width: 35%;}*/
 	.our-clients{width: 95%; text-align: center; margin-left: 10px;}
 }
 
 @media only screen and (max-width: 480px){
-	.logo{float: none;}
+	/*.logo{float: none;}*/
 	.search{float: left; margin-top: 15px;}
 	.section-footer{width: 100%; float: none;}
 	.block-logo li {width: 33%;float: left;position: relative; margin-bottom: 15px;}
+	.b-nav .nav {width: 45%;}
+	.title-slide, .active-slide .title-slide{display: none;}
+	.b-nav .nav {width: 65%;}
+	.thumbnail ul li {width: 10%;}
+	.block-article-teams{margin-bottom: 20px;}
+	.sitemap {width: 46%;}
+	.block-social-1 li {width: 21%;}
+	.block-social-2 li {width: 12%;}
+	.sitemap ul li {width: 16%;}
+	/*.b-nav a#touch-menu{margin-top: 25px;}
+	.owl-item{margin-top: 25px;}*/
 }
 
 @media only screen and (max-width: 460px){
@@ -84,6 +117,21 @@
 }
 
 @media only screen and (max-width: 340px){
-	.title-slide, .active-slide .title-slide {font: 13px "Oswald",sans-serif;}
-	.thumbnail ul li{margin-right: 30px;}
+	/*.title-slide, .active-slide .title-slide {font: 13px "Oswald",sans-serif;}*/
+	.thumbnail ul li {width: 15%;}
+	.sitemap {width: 48%;}
+	.form-search {float: left;}
+	.b-nav a#touch-menu {margin-top: 18px;padding: 12px 12px;}
+	.logo {margin-bottom: 15px;}
+	.copyright .logo_footer{display: none;}
+	.b-nav .nav {margin-top: 7px;}
+	.b-nav .nav li a{padding: 7px 0;}
+	.copyright {margin-bottom: 20px;}
+	.copyright p {width: 101%;}
+	.block-sitemap{margin-bottom: 10px;}
+	.block-social-1 li {width: 26%;}
+	.block-social-2 li {width: 15%;}
+	.sitemap ul li {width: 26%;}
+	/*.thumbnail ul li{margin-right: 30px;}*/
+	
 }
