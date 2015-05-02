@@ -183,10 +183,10 @@ nav {
 /* /buttons */
 
 /* ##########################Slider############################## */
-.owl-wrapper-outer{
+/*.owl-wrapper-outer{
   height: 695px;
   overflow: hidden;
-}
+}*/
 .owl-item{
   float: left;
   position: relative;
@@ -422,7 +422,7 @@ nav{height: 81px; }
 
 #section-works .block-slider-2 .owl-carousel-2{
 	/*width: 1626px;*/
-    height: 494px;
+    height: auto; /*494px;*/
     overflow: hidden;
 }
     
@@ -432,10 +432,10 @@ nav{height: 81px; }
 	width: 100%;
 }
 
-#section-works .block-slider-2 .owl-carousel-2 .owl-item{
+/*#section-works .block-slider-2 .owl-carousel-2 .owl-item{
 	width: 407px;
 	height: 247px;
-}
+}*/
 
 #section-works .block-slider-2 .owl-carousel-2 .owl-buttons{
 	width: 80px;
@@ -463,6 +463,112 @@ nav{height: 81px; }
     text-indent: -9999px;
     margin-left: 40px;
 }
+
+/*--------------------------Section-works  Photo hover-------------*/
+
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view {
+    width: 100%; /*407px;*/
+    height: auto; /*247px;*/
+    float: left;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #e08788; 
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view .mask, .view .content {
+    width: 100%; /*400px;*/
+    height: auto; /*247px;*/
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding-left: 30px
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view img {
+    display: block;
+    position: relative
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view h2 {
+    color: #fff;
+    position: relative;
+    font-size: 22px;
+    padding: 85px 0 5px 0;
+    text-align: left;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view p {
+    font-size: 14px;
+    position: relative;
+    color: #fff;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view a.info {
+	background: url(../images/sprites.png)no-repeat;
+	background-position: -514px 0;
+	width: 33px;
+	height: 30px;
+    display: inline-block;
+    text-decoration: none;
+    float: left;
+    padding-right: 15px;
+    margin-top: 22px;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view a.info-1{
+	background: url(../images/sprites.png)no-repeat;
+	background-position: -431px 0;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover img {
+    transform: scale(1.1);
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover .mask {
+    opacity: 1;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover h2,
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover p,
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover p {
+    transition-delay: 0.1s;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover a.info {
+    transition-delay: 0.2s;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view img {
+    transition: all 0.2s linear;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view .mask {
+    opacity: 0;
+    background-color: rgba(179,79,89, 0.8);
+    transition: all 0.4s ease-in-out;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view p {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+#section-works .block-slider-2 .owl-carousel-2 .item-2 .view a.info{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.fancybox-close{
+background-image: url(../images/fancybox_sprite.png);
+position: absolute;
+top: -18px;
+right: -18px;
+width: 36px;
+height: 36px;
+cursor: pointer;
+z-index: 8040;
+}
+
 
 /*---------------------Section blog-------------------------*/
 
@@ -644,108 +750,4 @@ nav{height: 81px; }
 }
 
 
-/*--------------------------Section-works  Photo hover-------------*/
-
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view {
-    width: 407px;
-    height: 247px;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 1px 1px 2px #e6e6e6;
-    cursor: default;
-    background: #e08788; 
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view .mask, .view .content {
-    width: 400px;
-    height: 247px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    padding-left: 30px
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view img {
-    display: block;
-    position: relative
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view h2 {
-    color: #fff;
-    position: relative;
-    font-size: 22px;
-    padding: 85px 0 5px 0;
-    text-align: left;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view p {
-    font-size: 14px;
-    position: relative;
-    color: #fff;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view a.info {
-	background: url(../images/sprites.png)no-repeat;
-	background-position: -514px 0;
-	width: 33px;
-	height: 30px;
-    display: inline-block;
-    text-decoration: none;
-    float: left;
-    padding-right: 15px;
-    margin-top: 22px;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view a.info-1{
-	background: url(../images/sprites.png)no-repeat;
-	background-position: -431px 0;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover img {
-    transform: scale(1.1);
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover .mask {
-    opacity: 1;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover h2,
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover p,
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover .info {
-    opacity: 1;
-    transform: translateY(0px);
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover p {
-    transition-delay: 0.1s;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view:hover a.info {
-    transition-delay: 0.2s;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view img {
-    transition: all 0.2s linear;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view .mask {
-    opacity: 0;
-    background-color: rgba(179,79,89, 0.8);
-    transition: all 0.4s ease-in-out;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view h2 {
-    transform: translateY(-100px);
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view p {
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 0.2s linear;
-}
-#section-works .block-slider-2 .owl-carousel-2 .item-2 .view a.info{
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-
-.fancybox-close{
-background-image: url(../images/fancybox_sprite.png);
-position: absolute;
-top: -18px;
-right: -18px;
-width: 36px;
-height: 36px;
-cursor: pointer;
-z-index: 8040;
-}
 
