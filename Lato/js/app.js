@@ -10,7 +10,13 @@ $(document).ready(function(){
                         loop:true,
                         navigation : true,
                         pagination: false,
-                        responsive: true
+                        responsive:true,
+                        responsive:{
+                          1200:{
+      items:6,
+      nav:true
+    }
+  }
                     });
 
 
