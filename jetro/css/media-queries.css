@@ -9,11 +9,15 @@
 	.owl-item img{width: 100%; height: auto; max-width: 100%;}
 	.footer-col{margin-left: 16px;}
 	.nav{margin-bottom: 20px;}
+	.slider-photo {width: auto; height: auto;}
+	.slider-photo img {width: 100%; height: auto; width: 100%;}
+	.block-work {width: 23%;}
+	.block-work img {max-width: 100%; height: auto; width: 100%;} 	
+}
 
-.slider-photo {width: auto; height: auto;}
-.slider-photo img {width: 100%; height: auto; width: 100%;}
-.block-work {width: 23%;}
-.block-work img {max-width: 100%; height: auto; width: 100%;} 	
+@media only screen and (max-width: 800px){
+	.slide-info{margin-left: 40px;}
+	.thumbnail ul li {margin-bottom: 18px;}
 }
 
 @media only screen and (max-width: 700px){
@@ -34,6 +38,17 @@
 	.section-article .block-article h2{ min-height: 46px; margin-bottom: 10px;}
 	.main-about .photo-main{float: none;margin-bottom: 15px;}
 }
+@media only screen and (max-width: 768px){
+	.thumbnail ul{text-align: center;}
+	.thumbnail ul li{display: inline-block; float: none; margin-bottom: 20px;}
+	.recent-work .block-work {margin-left: 18px;}
+	.name-work h3 {font-size: 15px;}
+}
+@media only screen and (max-width: 600px){
+	.slide-info{display: none;}
+	.recent-work .block-work {margin-left: 15px;}
+	.recent-work .block-work:first-child {margin-left: 15px;}
+}
 
 @media only screen and (max-width: 525px){
 	.sidebar{display: none;}
@@ -42,15 +57,14 @@
 
 @media only screen and (max-width: 486px){
 	.section-footer{ padding: 14px 20px;}
-	.logo img{}
-}
-
-@media only screen and (max-width: 486px){
-	.block-work {width: 100%; float: none; box-sizing: border-box;}
+	.block-work {width: 93%;float: none; box-sizing: border-box;}
 }
 
 @media only screen and (max-width: 480px){
 	.text-slider{display: none;}
+	.header .logo {float: none;}
+	.nav {float: none; margin-bottom: 0;display: inline-block;}
+	.nav ul li {margin: 0px 0px 20px 22px;}
 }
 
 @media only screen and (max-width: 475px){
@@ -59,4 +73,8 @@
     .nav ul li{float: none; display: inline-block;}
     .nav ul li a{font-size: 16px; padding: 20px 0 20px 10px;}
     .header .logo{float: none;}
+}
+@media only screen and (max-width: 320px){
+	.thumbnail ul li {margin-left: 17px;}
+	.block-work {width: 90%;}
 }

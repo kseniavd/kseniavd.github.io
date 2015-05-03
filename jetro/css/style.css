@@ -151,8 +151,8 @@ background: url(../images/prev.png) no-repeat 0 0 ;
 }
 
 .owl-stage-outer{
-	width: 941px;
-	height: 401px;
+	width: 100%; /*941px;*/
+	height: auto; /*401px;*/
 	overflow: hidden;
 }
 
@@ -168,16 +168,15 @@ background: url(../images/prev.png) no-repeat 0 0 ;
 }
 
 .slide-info{
-	position:absolute;
     display:block;
-    bottom: 32px;
-    left: 36px;
   	color: #fff;
  	padding: 22px 19px 22px 19px;
     background: rgba(232, 102, 60, 0.8);
   	width: 382px;
   	margin-top: 15px;
   	position: absolute;
+  	bottom: 32px;
+    left: 36px;
 	z-index: 26;
 }
 
@@ -193,16 +192,17 @@ background: url(../images/prev.png) no-repeat 0 0 ;
 .thumbnail ul{
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-left: -20px;
 }
 
 .thumbnail ul li{
 	float: left;
-	margin-right: 20px;
+	margin-left: 20px;
 }
 
-.thumbnail ul li:last-child{
-	margin-right: 0;
-}
+/*.thumbnail ul li:last-child{
+	margin-left: 0;
+}*/
 
 .thumbnail ul li a{
 	display: block;
