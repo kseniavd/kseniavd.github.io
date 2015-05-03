@@ -20,6 +20,7 @@ body {
 	font: 12px Verdana, sans-serif; 
 	color: #888888; 
 	background: url(../images/bg.png) repeat;
+	position: relative;
 	/*min-width: 800px; */
 }
 
@@ -148,6 +149,11 @@ h1{
 	padding-right: 38px;
 }
 
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
 .form-search .button-search{
 	width: 32px;
 	height: 26px;
@@ -174,9 +180,9 @@ h1{
 }
 
 .slider:after{content: ""; display: block;clear: both;}
-.wrapper-1:after{content: ""; display: block;clear: both;}
+.section-slider:after{content: ""; display: block;clear: both;}
 
-.content .wrapper-1{
+.content .section-slider{
 	width: 1000px;
 	margin: 0 auto;
 	padding-top: 65px;
@@ -234,9 +240,9 @@ h1{
 	background: #00a9e8;
 }
 
-.block-content:after{content: ""; display: block;clear: both;}
+.section-content:after{content: ""; display: block;clear: both;}
 
-.block-content{
+.section-content{
 	margin: 60px 0 44px 0;
 	width: 100%;
 }
@@ -299,9 +305,9 @@ h1{
 	cursor: pointer;
 }
 
-.testimonials:after{content: ""; display: block;clear: both;}
+.sections-testimonials:after{content: ""; display: block;clear: both;}
 
-.testimonials{
+.sections-testimonials{
 	background: url(../images/bg-vert-bot.png) repeat-x;
 	border-top: 1px solid #dcdcdc;
 	padding-top: 40px;
@@ -309,7 +315,7 @@ h1{
 	padding-bottom: 50px;
 }
 
-.testimonials h1{
+.sections-testimonials h1{
 	margin-bottom: 20px; 
 }
 
@@ -337,7 +343,7 @@ blockquote p{
 
 .footer{
 	background: #404040;
-	padding-top: 9px;
+	padding: 9px 0;
 }
 
 .nav-bottom:after{content: ""; display: block;clear: both;}
@@ -345,6 +351,9 @@ blockquote p{
 .nav-bottom{
 	float: left;
 	width: 256px;	
+	border-right: 1px solid #333333; /* синяя линия */ 
+	box-shadow: 1px 0 1px #484848; 
+	height: 65px;
 }
 
 .nav-bottom ul li .first{
@@ -379,7 +388,8 @@ blockquote p{
 	position: relative;
 	height: 65px;
 	float: left;
-	margin-top: 9px;
+	border-right: 1px solid #333333; /* синяя линия */ 
+	box-shadow: 1px 0 1px #484848; 
 }
 
 .twitter{
@@ -387,7 +397,7 @@ blockquote p{
 	width: 20px;
 	height: 16px;
 	position: absolute;
-	top: 0;
+	top: 6px;
 	left: 25px;
 }
 
@@ -396,7 +406,7 @@ blockquote p{
 	width: 20px;
 	height: 16px;
 	position: absolute;
-	top: 0;
+	top: 6px;
 	left: 60px;
 }
 
@@ -405,7 +415,7 @@ blockquote p{
 	width: 20px;
 	height: 16px;
 	position: absolute;
-	top: 30px;
+	top: 36px;
 	left: 25px;
 }
 
@@ -414,17 +424,8 @@ blockquote p{
 	width: 20px;
 	height: 16px;
 	position: absolute;
-	top: 30px;
+	top: 36px;
 	left: 60px;
-}
-
-.vertical-row-1{
-	background:#333333;
-	width: 1px;
-	height: 65px;
-	float: left;
-	padding-right: 1px;
-	border-right: 1px solid #484848;
 }
 
 .copyright:after{content: ""; display: block;clear: left;}

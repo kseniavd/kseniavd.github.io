@@ -7,8 +7,7 @@
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 	<link href="css/animate.css" type="text/css" rel="stylesheet" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link href="css/media-queries.css" rel="stylesheet" type="text/css">
-
+	<script src="js/viewportchecker.js"></script>
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
 
@@ -20,7 +19,27 @@
 	                autoplay: true,
 	                autoplayTimeout: 2500
 	            });
-	              });
+
+	            $(".animating").each(function() {
+		            var block = $(this);
+		            $(window).scroll(function() {
+		                var top = block.offset().top;
+		                var bottom = block.height() + top;
+		                top = top - $(window).height();
+		                var scroll_top = $(this).scrollTop();
+		                if ((scroll_top > top) && (scroll_top < bottom)) {
+		                    if (!block.hasClass("animated")) {
+		                        block.addClass("animated");
+		                    }
+		                } else {
+		                    //block.removeClass("animated");
+		                }
+		            });
+			       });
+
+			    $(window).scroll();  
+
+	    });
 	  </script>
 	</head>
 	<body>
@@ -38,7 +57,7 @@
 					</div>
 					<div class="login-registration">
 						<form action="/" method="post" class="search-block-form">
-						    	<input type="text" name="" class="form-search" maxlength="128" placeholder="Что ищем?">
+						    	<input type="text" name="" class="form-search" placeholder="Что ищем?">
 						    <select name="" class="form-category">
 								<option selected>Выберите категорию</option>
 								<option value=t1>Первая</option>         
@@ -53,13 +72,13 @@
 			</div>
 		</div>
 		
-		<div class="container-top">
+		<div class="section-top">
 			<div class="wrapper">
-				<div class="block-top-container">
+				
 					<div class="header">
 						<div class="logo">
 							<img src="images/logo.png" alt="">
-							<p>praguem.cz</p>
+							<h1>praguem.cz</h1>
 						</div>
 						<div class="nav">
 							<ul>
@@ -78,11 +97,16 @@
 			            	<div class="wrapper">
 			             	 	<div class="slider-photo">
 			               		 	<div class="owl-carousel">
-			                   			<div><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p><img src="images/photo-slider.jpg" alt=""> </div>
-			                    		<div><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p><img src="images/photo-slider-1.jpg" alt=""> </div>
-			                    		<div><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p><img src="images/photo-slider-2.jpg" alt=""> </div>
-			                   	 		<div><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p><img src="images/photo-slider-3.jpg" alt=""> </div>
-			                   	 		<div><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p><img src="images/photo-slider-4.jpg" alt=""> </div>
+			                   			<div><div class="slide-info"><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p></div>
+			                   			<img src="images/photo-slider.jpg" alt=""> </div>
+			                    		<div><div class="slide-info"><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p></div> 
+			                    		<img src="images/photo-slider-1.jpg" alt=""> </div>
+			                    		<div><div class="slide-info"><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p></div> 
+			                    		<img src="images/photo-slider-2.jpg" alt=""> </div>
+			                   	 		<div><div class="slide-info"><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p></div> 
+			                   	 		<img src="images/photo-slider-3.jpg" alt=""> </div>
+			                   	 		<div><div class="slide-info"><p><span>Карлов мост (чеш. Karlův most) —</span> средневековый мост в Праге через реку Влтаву, соединяющий исторические районы Малая Страна и Старе Место. Длина моста 520 м, ширина — 9,5 м. Мост опирается на 16 мощных арок, облицованных тёсаными блоками из песчаника. Каменный мост изначально назывался Пражским, в 1870 году официально переименован в честь основателя Карла IV. Его украшают тридцать скульптур, преимущественно религиозного содержания.</p></div> 
+			                   	 		<img src="images/photo-slider-4.jpg" alt=""> </div>
 			                		</div>
 			              		</div> 
 			            	</div>    
@@ -90,7 +114,7 @@
 			      	</div>
 						
 					<div class="main">
-						<div class="sidebar-top">
+						<div class="left-col"> 
 							<div class="recomend">
 								<div class="block-reccomend">
 									<h2>Мы рекомендуем</h2>
@@ -102,7 +126,7 @@
 									<span><a href="#">подробнее</a></span>
 								</div>
 							</div>
-							<div class="praga-mup">
+							<div class="praga-map">
 								<h2>Прага на карте</h2>
 								<img src="images/karta.png" alt="">
 							</div>
@@ -116,7 +140,12 @@
 								<h2>О проекте</h2>
 								<img class="photo-project" src="images/photo-project.jpg" alt="">
 								
-								<div class="social"><img src="images/social-sprite.png" alt=""></div>
+								<div class="social">
+									<a class="twitter" href=""></a>
+									<a class="vk" href=""></a>
+									<a class="fb" href=""></a>
+									<a class="write" href=""></a>
+								</div>
 								<p class="first">Столица Прага является самым известным городским историческим музеем-заповедником Чешской Республики. С 1992 г. историческое ядро Праги, занимающее площадь 866 га, внесено в Список мирово- го культурного и природного наследия ЮНЕСКО.Столица Прага является самым известным городским историческим музеем-заповедником Чешской Республики.</p>
 								<p>С 1992 г. историческое ядро Праги, занимающее площадь 866 га, внесено в Список мирово- го культурного и природного наследия ЮНЕСКО.Столица Прага является самым известным городским историческим музеем-заповедником Чешской Республики. С 1992 г. Столица Прага является самым известным городским историческим музеем-заповедником.</p>
 										
@@ -125,18 +154,18 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				
 			</div>
 		</div>
 				
-		<div class="food">
+		<div class="section-food">
 			<div class="wrapper">
-				<div class="container-food">
+				<div class="container-food animating  zoomIn">
 					<h2>Ближайшие к вам объекты</h2>
 					<div class="block-food">
 						<div class="title">
 							<img src="images/photo-cafe-1.jpg" alt="">
-							<p>Кафе</p>
+							<h3 class="name-photo">Кафе</h3>
 						</div>
 						<h3>Пицирия «Pizzaboom»</h3>
 						<p>Чего изволите - согреться остренькой "Мексиканской" пиццей, в которой аппетитная салями и телятина пикантно приправлены обжигающим соусом барбекю, или отведать аристократичную "Атлантическую" - выбор за Вами!</p>
@@ -145,7 +174,7 @@
 					<div class="block-food">
 						<div class="title">
 							<img src="images/photo-architect-1.jpg" alt="">
-							<p>Архитектура</p>
+							<h3 class="name-photo">Архитектура</h3>
 						</div>
 						<h3>Карлов мост</h3>
 						<p>Чего изволите - согреться остренькой "Мексиканской" пиццей, в которой аппетитная салями и телятина пикантно приправлены обжигающим соусом барбекю, или отведать аристократичную "Атлантическую" - выбор за Вами!</p>
@@ -154,7 +183,7 @@
 					<div class="block-food">
 						<div class="title">
 							<img src="images/photo-restourant-1.jpg" alt="">
-							<p>Ресторан</p>
+							<h3 class="name-photo">Ресторан</h3>
 						</div>
 						<h3>Céleste restautant - Dancing House</h3>
 						<p>Чего изволите - согреться остренькой "Мексиканской" пиццей, в которой аппетитная салями и телятина пикантно приправлены обжигающим соусом барбекю, или отведать аристократичную "Атлантическую" - выбор за Вами!</p>
@@ -164,9 +193,9 @@
 			</div>
 		</div>
 				
-		<div class="container-interesting">
+		<div class="section-interesting">
 			<div class="wrapper">
-				<div class="block-interesting">
+				<div class="container-interesting">
 					<div class="fact">
 						<h2>Интересный факт</h2>
 						<img src="images/photo-fact.jpg" alt="">
@@ -238,29 +267,29 @@
 			</div>
 		</div>
 
-		<div class="container-event">
+		<div class="section-event">
 			<div class="wrapper">
 				<div class="block-event">
-					<div class="new-event">
+					
 						<h2>Новости и события</h2>
-						<div class="article">
+						<div class="article-news">
 							<h3>Милош Земан вступил в должность президента Чехии</h3>
 							<p>Новый глава государства выступил с 15-минутной речью. Земан подчеркнул, что хочет быть "президентом всех граждан без различий, независимо от их политических убеждений". </p>
 							<p>Избранный президент Чехии Милош Земан в пятницу принес присягу и вступил в должность главы государства. Похожие статьи. Американский сенат утвердил Бреннана на пост главы ЦРУАмериканец собрал одну из крупнейших в мире коллекций БарбиВ Индонезии произошло зем..</p>
 							<span>подробнее</span>
 						</div>
-						<div class="article">
-							<h3 class="zagolovok">Сотрудничество Грузии и РФ обсудят Карасин и Абашидзе в Праге</h3>
+						<div class="article-news">
+							<h3 class="title-article-news">Сотрудничество Грузии и РФ обсудят Карасин и Абашидзе в Праге</h3>
 							<p>Новый глава государства выступил с 15-минутной речью. Земан подчеркнул, что хочет быть "президентом всех граждан без различий, независимо от их политических убеждений". Избранный президент Чехии Милош Земан в пятницу принес присягу и вступил в должность главы государства.Похожие статьиАмериканский сенат утвердил Бреннана на пост главы ЦРУАмериканец собрал одну из крупнейших в мире коллекций БарбиВ Индонезии произошло зем..</p>
 							<span class="block-podrobnee">подробнее</span>
 						</div>
-						<div class="article">
+						<div class="article-news">
 							<h3>Блогер Адагамов намерен<br> обжиться в Чехии</h3>
 							<p>Новый глава государства выступил с 15-минутной речью. Земан подчеркнул, что хочет быть "президентом всех граждан без различий, независимо от их политических убеждений". </p>
 							<p>Избранный президент Чехии Милош Земан в пятницу принес присягу и вступил в должность главы государства. Похожие статьи. Американский сенат утвердил Бреннана на пост главы ЦРУАмериканец собрал одну из крупнейших в мире коллекций БарбиВ Индонезии произошло зем..</p>
 							<span>подробнее</span>
 						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -268,12 +297,12 @@
 							
 					
 				
-		<div class="container-bottom">
+		<div class="section-navigatin-bottom">
 			<div class="wrapper">
-				<div class="block-bottom">
+				<div class="container-navigation-bottom">
 						
-					<div class="block-list-menu">
-						<div class="block-restourant-list">
+					<div class="block-navigation">
+						<div class="navigation-list">
 							<h3>Ресторанный гид</h3>
 							<ul>
 								<li><a href="#">Рестораны</a></li>
@@ -284,7 +313,7 @@
 							</ul>
 						</div>
 
-						<div class="block-restourant-list">
+						<div class="navigation-list">
 							<h3>Культура</h3>
 							<ul>
 								<li><a href="#">Кинотеатры</a></li>
@@ -296,8 +325,8 @@
 						</div>
 					</div>
 
-					<div class="block-list-menu" id="block-list-menu">
-						<div class="block-restourant-list">
+					<div class="block-navigation" id="block-navigation">
+						<div class="navigation-list">
 							<h3>Достопримечательности</h3>
 							<ul>
 								<li><a href="#">Парки</a></li>
@@ -306,7 +335,7 @@
 								<li><a href="#">Прочее</a></li>
 							</ul>
 						</div>
-						<div class="block-restourant-list">
+						<div class="navigation-list">
 							<h3>Недвижимость</h3>
 							<ul>
 								<li><a href="#">Продажа</a></li>
@@ -315,8 +344,8 @@
 						</div>
 					</div>
 
-					<div class="block-list-menu block-list-menu-2" >
-						<div class="block-restourant-list">
+					<div class="block-navigation block-navigation-2" >
+						<div class="navigation-list">
 							<h3>Досуг</h3>
 							<ul>
 								<li><a href="#">Клубы</a></li>
@@ -325,7 +354,7 @@
 								<li><a href="#">Прочее</a></li>
 							</ul>
 						</div>
-						<div class="restourant-list">
+						<div class="about-list">
 							<ul>
 								<li><a href="#">О проекте</a></li>
 								<li><a href="#">Интересные факты</a></li>
@@ -342,7 +371,7 @@
 
 		<div class="footer">
 			<div class="wrapper">
-				<div class="block-footer">
+				<div class="block-footer slideUp">
 					<div class="copyright-social-footer">
 						<ul>
 							<li><a href="#"><img src="images/twitter-footer.png" alt=""></a></li>
@@ -361,6 +390,8 @@
 				</div>
 			</div>
 		</div>
-			
+
+
+
 </body>
 </html>
