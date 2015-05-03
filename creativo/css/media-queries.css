@@ -133,7 +133,7 @@
 }
 
 @media screen and (max-width: 680px){
-	.b-welcom .section-welcom a{width: 16px; height: 4px;}
+	.b-welcom .section-welcom a{width: 16px; height: 4px; background-position: -442px -206px;}
 	.b-about .about-person {width: 85%;}
 	.b-container-progressbar .progressbar,
 	.b-container-progressbar .progressbar-2,

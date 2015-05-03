@@ -102,14 +102,14 @@ input{
 	text-transform: uppercase;
 }
 input[type="text"]{
-	background: url(../img/form-i-1.png) #ffffff no-repeat 97% center;
+	background: url(../img/form-i-1.png) #fff no-repeat 97% center;
 }
 input[name="emailaddress"]{
-	background: url(../img/form-i-2.png) #ffffff no-repeat 97% center;
+	background: url(../img/form-i-2.png) #fff no-repeat 97% center;
 }
 
 textarea{
-	background: url(../img/form-i-3.png) #ffffff no-repeat 97% 7%;
+	background: url(../img/form-i-3.png) #fff no-repeat 97% 7%;
 	border: none;
 	padding: 20px 19px;
 	width: 100%;
@@ -221,7 +221,6 @@ input[type="button"], input[type="submit"], button {
 	background: #de654e;
 	height: 80px;
 }
-
 .b-header .in{
 	background: #de654e;
 	background: rgba(222,101,78,0.95);
@@ -230,7 +229,6 @@ input[type="button"], input[type="submit"], button {
 	top: 0;
 	z-index: 10;
 }
-
 .b-header.fixed .in{
 	position: fixed;
 	margin: 0 auto;
@@ -260,13 +258,11 @@ input[type="button"], input[type="submit"], button {
 .b-header .b-nav ul li a{
 	padding-bottom: 6px;
 }
-
 .b-header .b-nav ul li a:hover,
 .b-header .b-nav ul li a.active{
 	border-bottom: 3px solid rgba(255, 255, 255, .4);
 	padding-bottom: 3px;
 }
-
 .b-header .b-nav a#touch-menu{
 	background:  #d56e56 url(../img/touch-menu.png)no-repeat center center;
 	width: 22px;
@@ -343,9 +339,6 @@ input[type="button"], input[type="submit"], button {
 	background: #ebebea;
 	color: #2e2e2e;
 }
-
-
-
 .b-works .menu{display: none;}
 .b-works .menu{
 	background: #fff;
@@ -393,10 +386,6 @@ input[type="button"], input[type="submit"], button {
 .b-works .tabs li a:hover, .b-works .menu:hover{
 	color: #fff;
 }
-
-
-
-
 .b-works .tab_gallery ul .item .view {
     width: 340px;
     height: 340px;
@@ -433,10 +422,6 @@ input[type="button"], input[type="submit"], button {
 	margin-left: 1%;
 	margin-bottom:1.5%;
 }
-.b-works .tab_gallery ul li:first-child,
-/*.b-works .tab_gallery .item-4{
-	margin-left: 0;
-}*/
 .b-works .tab_gallery ul .item .view img {
     display: inline-block;
     position: relative
@@ -542,68 +527,68 @@ input[type="button"], input[type="submit"], button {
 	display: inline-block;
 }
 .b-about .about-person .about-content figcaption .social-icon-1{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: 0 -1px;
 	width: 24px;
 	height: 24px;
 	margin-right: 23px;
 }
 .b-about .about-person .about-content figcaption .social-icon-2{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -38px -2px;
 	width: 20px;
 	height: 24px;
 	margin-right: 27px;
 }
 .b-about .about-person .about-content figcaption .social-icon-3{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -71px -6px;
 	width: 22px;
 	height: 24px;
 	margin-right: 32px;
 }
 .b-about .about-person .about-content figcaption .social-icon-4{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -103px -1px;
 	width: 10px;
 	height: 24px;
 }
 .b-about .about-person .about-content figcaption .social-icon-5{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -123px -2px;
 	width: 13px;
 	height: 24px;
 	margin-right: 32px;
 }
 .b-about .about-person .about-content figcaption .social-icon-6{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -38px -2px;;
 	width: 20px;
 	height: 24px;
 	margin-right: 28px;
 }
 .b-about .about-person .about-content figcaption .social-icon-7{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -147px -4px;
 	width: 22px;
 	height: 24px;
 }
 .b-about .about-person .about-content figcaption .social-icon-8{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -178px -2px;
 	width: 22px;
 	height: 24px;
 	margin-right: 24px;
 }
 .b-about .about-person .about-content figcaption .social-icon-9{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -71px -6px;
 	width: 22px;
 	height: 24px;
 	margin-right: 28px;
 }
 .b-about .about-person .about-content figcaption .social-icon-10{
-	background: url(../img/sprite-icon.png) no-repeat;
+	background: url(../img/sprite-social.png) no-repeat;
 	background-position: -38px -2px;
 	width: 20px;
 	height: 24px;
