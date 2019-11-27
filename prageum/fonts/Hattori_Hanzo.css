@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Hattori_Hanzo';
-    src: url('fonts/Hattori_Hanzo.eot');
-    src: url('fonts/Hattori_Hanzo.eot') format('embedded-opentype'),
-         url('fonts/Hattori_Hanzo.woff2') format('woff2'),
-         url('fonts/Hattori_Hanzo.woff') format('woff'),
-         url('fonts/Hattori_Hanzo.ttf') format('truetype'),
-         url('fonts/Hattori_Hanzo.svg#Hattori_Hanzo') format('svg');
-}
